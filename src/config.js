@@ -150,7 +150,7 @@ const maps = {
     defaultZoomLevel: 13,
 
     // Color of the circle on the Map component.
-    circleColor: '#c0392b',
+    circleColor: '#00D9BA',
   },
 
   // Custom marker image to use in the Map component.
