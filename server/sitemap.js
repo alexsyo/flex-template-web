@@ -61,7 +61,7 @@ exports.sitemapStructure = () => {
       '/': ['get'],
       '/signup': ['get'],
       '/login': ['get'],
-      '/s?address=Helsinki%2C%20Finland%26bounds=60.2978389%2C25.254484899999966%2C59.9224887%2C24.782875800000056%26country=FI%26origin=60.16985569999999%2C24.93837910000002': [
+      '/s?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands&bounds=52.51762811%2C5.12390605%2C52.19380373%2C4.61517488': [
         'get',
       ],
       '/account': ['get'],
@@ -84,7 +84,7 @@ exports.sitemapStructure = () => {
         changefreq: 'always',
         priority: 1.0,
       },
-      '/s?address=Helsinki%2C%20Finland%26bounds=60.2978389%2C25.254484899999966%2C59.9224887%2C24.782875800000056%26country=FI%26origin=60.16985569999999%2C24.93837910000002': {
+      '/s?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands&bounds=52.51762811%2C5.12390605%2C52.19380373%2C4.61517488': {
         changefreq: 'always',
         priority: 1.0,
       },
