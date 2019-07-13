@@ -53,17 +53,17 @@ const SectionLocations = props => {
         {locationLink(
           'Utrecht',
           utrechtImage,
-          '?address=Utrecht%2C%20Utrecht%2C%20Netherlands&bounds=52.135661%2C5.195132%2C52.026243%2C5.017808'
+          '?address=Utrecht%2C%20Netherlands&bounds=52.135661%2C5.195132%2C52.026243%2C5.017808'
         )}
         {locationLink(
           'Amsterdam',
           amsterdamImage,
-          '?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands&bounds=52.51762811%2C5.12390605%2C52.19380373%2C4.61517488'
+          '?address=Amsterdam%2C%20Netherlands&bounds=52.51762811%2C5.12390605%2C52.19380373%2C4.61517488'
         )}
         {locationLink(
           'Rotterdam',
           rotterdamImage,
-          '?address=Rotterdam%2C%20South%20Holland%2C%20Netherlands&bounds=51.994305%2C4.601433%2C51.861633%2C4.37917'
+          '?address=Rotterdam%2C%20Netherlands&bounds=51.994305%2C4.601433%2C51.861633%2C4.37917'
         )}
       </div>
     </div>
