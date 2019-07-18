@@ -225,6 +225,7 @@
 }
 
 .profileMenuContent {
+  right: 0;
   min-width: 276px;
   padding-top: 20px;
 }
