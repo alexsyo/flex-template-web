@@ -1,10 +1,10 @@
 {
-  "name": "Saunatime",
-  "short_name": "Saunatime",
+  "name": "Boxit",
+  "short_name": "Boxit",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#00D9BA",
-  "background_color": "#FFFFFF",
+  "theme_color": "#00d9ba",
+  "background_color": "#00d9ba",
   "icons": [
     {
       "src": "/static/icons/android-chrome-192x192.png",
@@ -12,8 +12,8 @@
       "type": "image/png"
     },
     {
-      "src": "/static/icons/android-chrome-512x512.png",
-      "sizes": "512x512",
+      "src": "/static/icons/android-chrome-256x256.png",
+      "sizes": "256x256",
       "type": "image/png"
     }
   ]
