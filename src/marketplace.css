@@ -20,11 +20,7 @@
    */
 
   /* Full screen Background image located in root-folder/src/assets */
-  --backgroundImage: {
-    /* Gradient direction and overlaying the black color on top of the image for better readability */
-    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
-      url('../../assets/background-box-dog-1700.jpg');
-
+  --backgroundImageCommon: {
     /* Add loading color for the div */
     background-color: var(--matterColor);
 
@@ -37,6 +33,22 @@
     @media(max-width: 1023px) {
       background-position: 75% 10%;
     }
+  }
+
+  --backgroundImage: {
+    @apply --backgroundImageCommon;
+
+    /* Gradient direction and overlaying the black color on top of the image for better readability */
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+      url('../../assets/background-box-dog-1700.jpg');
+  }
+
+  --backgroundHostImage: {
+    @apply --backgroundImageCommon;
+
+    /* Gradient direction and overlaying the black color on top of the image for better readability */
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+      url('../../assets/background-host-demo.jpg');
   }
 
   /* ================ Colors ================ */

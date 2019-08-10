@@ -1,0 +1,40 @@
+@import '../../marketplace.css';
+
+.steps {
+  display: flex;
+  flex-direction: column;
+
+  @media (--viewportMedium) {
+    flex-direction: row;
+  }
+}
+
+.step {
+  position: relative;
+  @media (--viewportMedium) {
+    width: 50%;
+  }
+}
+
+.step:last-of-type {
+  @media (--viewportMedium) {
+    padding: 30px 60px;
+  }
+}
+
+.stepTitle {
+  @apply --marketplaceH1FontStyles;
+  margin-top: 0 !important;
+  margin-bottom: 18px;
+}
+
+.stepImageWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.stepImage {
+  width: 100%;
+}

@@ -6,6 +6,7 @@ import {
   ContactDetailsPage,
   EditListingPage,
   EmailVerificationPage,
+  HostLandingPage,
   InboxPage,
   LandingPage,
   ListingPage,
@@ -49,6 +50,11 @@ const routeConfiguration = () => {
       path: '/',
       name: 'LandingPage',
       component: props => <LandingPage {...props} />,
+    },
+    {
+      path: '/host',
+      name: 'HostLandingPage',
+      component: props => <HostLandingPage {...props} />
     },
     {
       path: '/about',
