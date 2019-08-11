@@ -45,10 +45,11 @@
 .hero {
   flex-grow: 1;
   justify-content: flex-end;
-  padding-bottom: 32px;
+  position: relative;
 
   @media (--viewportMedium) {
     padding-bottom: 83px;
+    flex-direction: row;
   }
 
   @media (--viewportLarge) {
@@ -103,7 +104,15 @@
 
 .sectionContentFirstChild {
   composes: sectionContent;
-  margin-top: 8vh;
+  margin-top: 32vh;
+
+  @media(min-width: 375px) {
+    margin-top: 25vh;
+  }
+
+  @media(--viewportMedium) {
+    margin-top: 8vh;
+  }
 }
 
 /* A bar on top of light sections */

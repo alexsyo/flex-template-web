@@ -2,7 +2,7 @@ import React from 'react';
 import { string } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import { NamedLink } from '..';
+import { NamedLink, PriceCalculator } from '..';
 
 import css from './SectionHostHero.css';
 
@@ -27,6 +27,7 @@ const SectionHostHero = props => {
           <FormattedMessage id="SectionHostHero.browseButton" />
         </NamedLink>
       </div>
+      <PriceCalculator />
     </div>
   );
 };
