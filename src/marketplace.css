@@ -28,11 +28,7 @@
     background-size: cover;
 
     /* Align the image within the container */
-    background-position: center 10%;
-
-    @media(max-width: 1023px) {
-      background-position: 75% 10%;
-    }
+    background-position: center;
   }
 
   --backgroundImage: {
@@ -41,6 +37,12 @@
     /* Gradient direction and overlaying the black color on top of the image for better readability */
     background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
       url('../../assets/background-box-dog-1700.jpg');
+
+    background-position: center 10%;
+
+    @media(max-width: 1023px) {
+      background-position: 75% 10%;
+    }
   }
 
   --backgroundHostImage: {
