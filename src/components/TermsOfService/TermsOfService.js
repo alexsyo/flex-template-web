@@ -80,7 +80,7 @@ const TermsOfService = props => {
 
       <h2>5) Limitation of Liability</h2>
       <p>
-        Except as expressly provided in the insurance provision, to the maximum extent permitted by applicable law, 
+        To the maximum extent permitted by applicable law, 
         in no event shall Boxitonline, its affiliates, agents, directors, employees, supplier, or its licensors 
         be liable for any direct, indirect, punitive, incidental, special, consequential, or exemplary damages, 
         including without limitation damages for loss of profits, goodwill, use, data or other intangible losses, 
@@ -99,9 +99,8 @@ const TermsOfService = props => {
         emailed, transmitted, or otherwise made available through the service; and/or 
         (VII) User content or the defamatory, offensive, or illegal conduct of any third party.  
         In no event shall Boxitonline, its affiliates, agents, directors, employees, suppliers, or licensors be liable to you 
-        for any claims, proceedings, liabilities, obligations, damages, losses or costs in an amount exceeding the greater of either 
-        (a) The amounts paid by Boxitonline to you in the twelve (12) month period prior to the event giving rise to the liability; or 
-        (b) One hundred dollars ($100).  
+        for any claims, proceedings, liabilities, obligations, damages, losses or costs in an amount exceeding  
+        the amounts paid by Boxitonline to you in the twelve (12) month period prior to the event giving rise to the liability.  
         The limitations of damages set forth above are fundamental elements of the basis of the bargain between Boxitonline and you.  
         This limitation of liability section applies whether the alleged liability is based on contract, tort, negligence, 
         strict liability, or any other basis, even if Boxitonline has been advised of the possibility of such damage.  
@@ -125,15 +124,15 @@ const TermsOfService = props => {
       <h2>8) Governing Law</h2>
       <p>
         You agree that: 
-        (i) the Service shall be deemed solely based in New York; and 
+        (i) the Service shall be deemed solely based in the Netherlands; and 
         (ii) the Service shall be deemed a passive one that does not give rise to personal jurisdiction over Boxitonline, 
-        either specific or general, in jurisdictions other than New York. 
-        This Agreement shall be governed by the internal substantive laws of the State of New York. 
-        You agree to submit to the personal jurisdiction of a state court located in New York County, New York or 
-        the U.S. District Court for the Southern District of New York for any actions for which we retain the 
-        right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or 
-        threatened infringement, misappropriation or violation of a our copyrights, trademarks, trade secrets, 
-        patents, or other intellectual property or proprietary rights, as set forth in the Arbitration provision below.
+        either specific or general, in jurisdictions other than the Netherlands. 
+        This Agreement shall be governed by the internal substantive laws of the Netherlands. 
+        You agree to submit to the personal jurisdiction of a state court located in the Netherlands, 
+        for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent 
+        jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a our copyrights, 
+        trademarks, trade secrets, patents, or other intellectual property or proprietary rights, 
+        as set forth in the Arbitration provision below.
       </p>
 
       <h2>9) Arbitration</h2>
@@ -141,7 +140,7 @@ const TermsOfService = props => {
         In the unlikely event that Boxitonline has not been able to resolve a dispute it has with you after attempting 
         to do so informally, we each agree to resolve any claim, dispute, or controversy (excluding any Boxitonline 
         claims for injunctive or other equitable relief) arising out of or in connection with or relating to this Agreement, or 
-        the breach or alleged breach thereof (collectively, "Claims"), by binding arbitration in the county of New York. 
+        the breach or alleged breach thereof (collectively, "Claims"), by binding arbitration in the state of Netherlands. 
         The award rendered by the arbitrator shall include costs of arbitration, reasonable attorney's fees and reasonable 
         costs for expert and other witnesses, and any judgment on the award rendered by the arbitrator may be entered 
         in any court of competent jurisdiction. Nothing in this Section shall be deemed as preventing Boxitonline from seeking 
