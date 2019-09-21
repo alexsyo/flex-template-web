@@ -53,7 +53,7 @@ const AboutPage = () => {
 
               <p>
                 To meet the needs of this travelers, who relocate to work or study in a place far from 
-                their home, we created Boxit-online: a place where travelers can get in touch with locals 
+                their home, we created Boxitonline: a place where travelers can get in touch with locals 
                 and ask them some help by holding their belongings for a little while.
               </p>
 
