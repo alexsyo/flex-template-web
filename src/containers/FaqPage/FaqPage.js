@@ -1,5 +1,6 @@
 import React from 'react';
 import config from '../../config';
+import { FormattedMessage } from '../../util/reactIntl'
 import { twitterPageURL } from '../../util/urlHelpers';
 import { StaticPage, TopbarContainer } from '../../containers';
 import {
@@ -11,8 +12,19 @@ import {
   ExternalLink,
 } from '../../components';
 
-import css from './AboutPage.css';
-import image from './about-us-1056.jpg';
+import css from './FaqPage.css';
+import image from './boxes-shaking-hands.jpg';
+
+const scrollToQuestion = (questionId) => {
+  const selector = `#${questionId}`;
+  const el = document.querySelector(selector);
+  if (el) {
+    el.scrollIntoView({
+      block: 'center',
+      behavior: 'smooth',
+    });
+  }
+}
 
 const AboutPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;
@@ -35,7 +47,9 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Discover the storing community.</h1>
+          <h1 className={css.pageTitle}>
+            <FormattedMessage id="FaqPage.title" />
+          </h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
@@ -44,26 +58,45 @@ const AboutPage = () => {
             </div>
 
             <div className={css.contentMain}>
-              <h2>
-                We all have some free space lying around in our homes and we could use some extra cash.
-                On the other end everyone that is moving in, out or across a country may need a place 
-                to temporarily store his extra boxes and luggages, but he doesn’t have local friends 
-                to hold them.
-              </h2>
+              <a
+                onClick={() => scrollToQuestion('question1')}
+                className={css.questionHeader}
+              >
+                <FormattedMessage id="FaqPage.question1" />
+              </a>
+              <a
+                onClick={() => scrollToQuestion('question2')}
+                className={css.questionHeader}
+              >
+                <FormattedMessage id="FaqPage.question2" />
+              </a>
+              <a
+                onClick={() => scrollToQuestion('question3')}
+                className={css.questionHeader}
+              >
+                <FormattedMessage id="FaqPage.question3" />
+              </a>
 
+
+              <h3 id="question1" className={css.question}>
+                <FormattedMessage id="FaqPage.question1" />
+              </h3>
               <p>
-                To meet the needs of this travelers, who relocate to work or study in a place far from 
-                their home, we created Boxitonline: a place where travelers can get in touch with locals 
-                and ask them some help by holding their belongings for a little while.
+                <FormattedMessage id="FaqPage.answer1" />
               </p>
 
-              <h3 className={css.subtitle}>Have you got free space in your garage or closet?</h3>
-
+              <h3 id="question2" className={css.question}>
+                <FormattedMessage id="FaqPage.question2" />
+              </h3>
               <p>
-                Boxitonline offers you a good way to earn some extra cash! If you're not using your garage, 
-                why not rent it to other people while it's free. And even if you are using your garage 
-                (we understand, it's your favourite playground!), why not invite other people to lay down 
-                their boxes in a corner? They will be taken care as if they were your own treasures.
+                <FormattedMessage id="FaqPage.answer2" />
+              </p>
+
+              <h3 id="question3" className={css.question}>
+                <FormattedMessage id="FaqPage.question3" />
+              </h3>
+              <p>
+                <FormattedMessage id="FaqPage.answer3" />
               </p>
 
               <h2 id="contact">
