@@ -1,5 +1,6 @@
 import React from 'react';
 import config from '../../config';
+import { FormattedMessage } from '../../util/reactIntl';
 import { twitterPageURL } from '../../util/urlHelpers';
 import { StaticPage, TopbarContainer } from '../../containers';
 import {
@@ -25,7 +26,7 @@ const AboutPage = () => {
       schema={{
         '@context': 'http://schema.org',
         '@type': 'AboutPage',
-        description: 'About Saunatime',
+        description: 'About Boxitonline',
         name: 'About page',
       }}
     >
@@ -35,49 +36,52 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Discover the storing community.</h1>
+          <h1 className={css.pageTitle}>
+            <FormattedMessage id="AboutPage.title" />
+          </h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>We built Boxitonline to meet locals and newcomers needs!</p>
+              <p>
+                <FormattedMessage id="AboutPage.sideBar" />
+              </p>
             </div>
 
             <div className={css.contentMain}>
               <h2>
-                We all have some free space lying around in our homes and we could use some extra cash.
-                On the other end everyone that is moving in, out or across a country may need a place 
-                to temporarily store his extra boxes and luggages, but he doesn’t have local friends 
-                to hold them.
+                <FormattedMessage id="AboutPage.paragraphHeader1" />
               </h2>
 
               <p>
-                To meet the needs of this travelers, who relocate to work or study in a place far from 
-                their home, we created Boxitonline: a place where travelers can get in touch with locals 
-                and ask them some help by holding their belongings for a little while.
+                <FormattedMessage id="AboutPage.paragraph1" />
               </p>
 
-              <h3 className={css.subtitle}>Have you got free space in your garage or closet?</h3>
+              <h3 className={css.subtitle}>
+                <FormattedMessage id="AboutPage.paragraphHeader2" />
+              </h3>
 
               <p>
-                Boxitonline offers you a good way to earn some extra cash! If you're not using your garage, 
-                why not rent it to other people while it's free. And even if you are using your garage 
-                (we understand, it's your favourite playground!), why not invite other people to lay down 
-                their boxes in a corner? They will be taken care as if they were your own treasures.
+                <FormattedMessage id="AboutPage.paragraph2" />
               </p>
 
               <h2 id="contact">
-                Get in touch
+                <FormattedMessage id="AboutPage.getInTouchHeader" />
               </h2>
               <p>
-                We are happy to help you in anything you have in your mind.
-                Best way to reach us is by emailing us at{' '}
-                <ExternalLink href="mailto:admin@boxitonline.com">admin@boxitonline.com</ExternalLink>.
+                <FormattedMessage
+                  id="AboutPage.getInTouchParagraph1"
+                  values={{ email: <a href="mailto:admin@boxitonline.com">admin@boxitonline.com</a> }}
+                />
               </p>
               <p>
-                You can also checkout our{' '}
-                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}
-                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink>.
+                <FormattedMessage
+                  id="AboutPage.getInTouchParagraph2"
+                  values={{
+                    facebook: <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink>,
+                    twitter: <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink> 
+                  }}
+                />
               </p>
             </div>
           </div>

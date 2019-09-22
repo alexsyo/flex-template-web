@@ -1,6 +1,6 @@
 import React from 'react';
 import config from '../../config';
-import { FormattedMessage } from '../../util/reactIntl'
+import { FormattedMessage } from '../../util/reactIntl';
 import { twitterPageURL } from '../../util/urlHelpers';
 import { StaticPage, TopbarContainer } from '../../containers';
 import {
@@ -36,9 +36,9 @@ const AboutPage = () => {
       title="About Us"
       schema={{
         '@context': 'http://schema.org',
-        '@type': 'AboutPage',
-        description: 'About Saunatime',
-        name: 'About page',
+        '@type': 'FaqPage',
+        description: 'FAQ Boxitonline',
+        name: 'FAQ page',
       }}
     >
       <LayoutSingleColumn>
@@ -54,7 +54,9 @@ const AboutPage = () => {
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>We built Boxitonline to meet locals and newcomers needs!</p>
+              <p>
+                <FormattedMessage id="FaqPage.sideBar" />
+              </p>
             </div>
 
             <div className={css.contentMain}>
@@ -100,17 +102,22 @@ const AboutPage = () => {
               </p>
 
               <h2 id="contact">
-                Get in touch
+                <FormattedMessage id="AboutPage.getInTouchHeader" />
               </h2>
               <p>
-                We are happy to help you in anything you have in your mind.
-                Best way to reach us is by emailing us at{' '}
-                <ExternalLink href="mailto:admin@boxitonline.com">admin@boxitonline.com</ExternalLink>.
+                <FormattedMessage
+                  id="AboutPage.getInTouchParagraph1"
+                  values={{ email: <a href="mailto:admin@boxitonline.com">admin@boxitonline.com</a> }}
+                />
               </p>
               <p>
-                You can also checkout our{' '}
-                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}
-                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink>.
+                <FormattedMessage
+                  id="AboutPage.getInTouchParagraph2"
+                  values={{
+                    facebook: <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink>,
+                    twitter: <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink> 
+                  }}
+                />
               </p>
             </div>
           </div>
