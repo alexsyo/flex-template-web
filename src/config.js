@@ -92,7 +92,7 @@ const siteTitle = 'Boxitonline';
 const siteTwitterHandle = '@boxitonline';
 
 // Instagram page is used in SEO schema (http://schema.org/Organization)
-const siteInstagramPage = null;
+const siteInstagramPage = 'https://www.instagram.com/boxit_online';
 
 // Facebook page is used in SEO schema (http://schema.org/Organization)
 const siteFacebookPage = 'https://www.facebook.com/Boxitonline-108350573891218';
