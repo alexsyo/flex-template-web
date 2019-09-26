@@ -9,12 +9,13 @@ import { NamedLink } from '..';
 
 import css from './SectionHostDescription.css';
 
-const DescriptionImage = ({ className, alt, ...rest }) => (
-  <div className={css.stepImageWrapper}>
-    <img className={css.stepImage} alt={alt} {...rest} />
-  </div>
-);
-const LazyImage = lazyLoadWithDimensions(DescriptionImage);
+// todo: add other images / content
+// const DescriptionImage = ({ className, alt, ...rest }) => (
+//   <div className={css.stepImageWrapper}>
+//     <img className={css.stepImage} alt={alt} {...rest} />
+//   </div>
+// );
+// const LazyImage = lazyLoadWithDimensions(DescriptionImage);
 
 const SectionHostDescription = props => {
   const { rootClassName, className } = props;
@@ -25,10 +26,15 @@ const SectionHostDescription = props => {
 
       <div className={css.steps}>
         <div className={css.step}>
-          <LazyImage
-            src={leftImage}
-            alt="description"
-          />
+          <div className={css.stepImageWrapper}>
+            <iframe
+              className={css.youtube}
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/l7JBPW6hOOQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            />
+          </div>
         </div>
 
         <div className={css.step}>

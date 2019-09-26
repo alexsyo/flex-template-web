@@ -40,6 +40,10 @@
     min-height: 600px;
     height: calc(70vh - var(--topbarHeightDesktop));
   }
+
+  @media (orientation: landscape) and (max-height: 375px) {
+    height: 100%;
+  }
 }
 
 .hero {
@@ -104,11 +108,7 @@
 
 .sectionContentFirstChild {
   composes: sectionContent;
-  margin-top: 32vh;
-
-  @media(min-width: 375px) {
-    margin-top: 25vh;
-  }
+  margin-top: 175px;
 
   @media(--viewportMedium) {
     margin-top: 8vh;
