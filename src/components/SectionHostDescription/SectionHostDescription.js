@@ -31,7 +31,7 @@ const SectionHostDescription = props => {
               className={css.youtube}
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/l7JBPW6hOOQ" frameborder="0"
+              src="https://www.youtube.com/embed/l7JBPW6hOOQ?playsinline=0" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
             />
           </div>
