@@ -6,6 +6,7 @@ export { default as EditListingPage } from './EditListingPage/EditListingPage';
 export { default as EmailVerificationPage } from './EmailVerificationPage/EmailVerificationPage';
 export { default as FaqPage } from './FaqPage/FaqPage';
 export { default as HostLandingPage } from './HostLandingPage/HostLandingPage';
+export { default as HowItWorksLandingPage } from './HowItWorksLandingPage/HowItWorksLandingPage';
 export { default as InboxPage } from './InboxPage/InboxPage';
 export { default as LandingPage } from './LandingPage/LandingPage';
 export { default as ListingPage } from './ListingPage/ListingPage';

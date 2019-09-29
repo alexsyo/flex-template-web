@@ -1,0 +1,128 @@
+@import '../../marketplace.css';
+
+.steps {
+  display: flex;
+  flex-direction: column;
+
+  @media (--viewportMedium) {
+    flex-direction: row;
+  }
+}
+
+.step {
+  position: relative;
+  @media (--viewportMedium) {
+    padding: 0 60px;
+    width: 50%;
+  }
+}
+
+.stepText {
+  position: relative;
+  @media (--viewportMedium) {
+    padding: 30px 60px;
+    width: 50%;
+  }
+}
+
+.stepTitle {
+  @apply --marketplaceH1FontStyles;
+  margin-top: 0 !important;
+  margin-bottom: 18px;
+}
+
+.stepImageWrapper {
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+}
+
+.stepImage {
+  border-radius: 20px;
+  border: 6px solid #E4E4E4;
+  width: 100%;
+}
+
+.youtube {
+  margin: 30px auto;
+}
+
+.arrowRight {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  height: 200px;
+}
+
+.arrowRight::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 50%;
+  height: 50%;
+  border-bottom: 6px solid #E4E4E4;
+  border-left: 6px dashed #E4E4E4;
+  border-bottom-left-radius: 80px;
+}
+
+.arrowRight::after {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  content: "";
+  width: 50%;
+  height: 50%;
+  border-top: 6px solid #E4E4E4;
+  border-right: 6px dashed #E4E4E4;
+  border-top-right-radius: 80px;
+}
+
+.arrowLeft {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  height: 200px;
+}
+
+.arrowLeft::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  width: 50%;
+  height: 50%;
+  border-bottom: 6px solid #E4E4E4;
+  border-right: 6px dashed #E4E4E4;
+  border-bottom-right-radius: 80px;
+}
+
+.arrowLeft::after {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  content: "";
+  width: 50%;
+  height: 50%;
+  border-top: 6px solid #E4E4E4;
+  border-left: 6px dashed #E4E4E4;
+  border-top-left-radius: 80px;
+}
+
+.arrowImage {
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  z-index: 1;
+  border-radius: 120%;
+  height: 120px;
+  width: 120px;
+  border: 6px solid #E4E4E4;
+  background: white;
+}
