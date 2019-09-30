@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import leftImage from './images/shelves-demo.jpg';
 import laptopImage from './images/laptop.jpg';
 import reviewImage from './images/review.jpg';
 import carryBoxesImage from './images/carry-boxes.jpg';
