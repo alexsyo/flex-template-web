@@ -1,6 +1,7 @@
 import React from 'react';
+import { compose } from 'redux';
 import config from '../../config';
-import { FormattedMessage } from '../../util/reactIntl';
+import { injectIntl, FormattedMessage } from '../../util/reactIntl';
 import { twitterPageURL } from '../../util/urlHelpers';
 import { StaticPage, TopbarContainer } from '../../containers';
 import {
@@ -15,19 +16,22 @@ import {
 import css from './AboutPage.css';
 import image from './about-us-1056.jpg';
 
-const AboutPage = () => {
-  const { siteTwitterHandle, siteFacebookPage } = config;
+const AboutPage = ({ intl }) => {
+  const { siteTitle, siteTwitterHandle, siteFacebookPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
+  const schemaTitle = intl.formatMessage({ id: 'AboutPage.schemaTitle' }, { siteTitle });
+  const schemaDescription = intl.formatMessage({ id: 'AboutPage.schemaDescription' });
 
   // prettier-ignore
   return (
     <StaticPage
-      title="About Us"
+      description={schemaDescription}
+      title={schemaTitle}
       schema={{
         '@context': 'http://schema.org',
         '@type': 'AboutPage',
-        description: 'About Boxitonline',
-        name: 'About page',
+        description: schemaDescription,
+        name: schemaTitle,
       }}
     >
       <LayoutSingleColumn>
@@ -95,4 +99,6 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default compose(
+  injectIntl
+)(AboutPage);

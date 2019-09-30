@@ -1,6 +1,7 @@
 import React from 'react';
+import { compose } from 'redux';
 import config from '../../config';
-import { FormattedMessage } from '../../util/reactIntl';
+import { injectIntl, FormattedMessage } from '../../util/reactIntl';
 import { twitterPageURL } from '../../util/urlHelpers';
 import { StaticPage, TopbarContainer } from '../../containers';
 import {
@@ -26,19 +27,22 @@ const scrollToQuestion = (questionId) => {
   }
 }
 
-const FaqPage = () => {
-  const { siteTwitterHandle, siteFacebookPage } = config;
+const FaqPage = ({ intl }) => {
+  const { siteTitle, siteTwitterHandle, siteFacebookPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
+  const schemaTitle = intl.formatMessage({ id: 'FaqPage.schemaTitle' }, { siteTitle });
+  const schemaDescription = intl.formatMessage({ id: 'FaqPage.schemaDescription' });
 
   // prettier-ignore
   return (
     <StaticPage
-      title="FAQ"
+      description={schemaDescription}
+      title={schemaTitle}
       schema={{
         '@context': 'http://schema.org',
         '@type': 'FaqPage',
-        description: 'FAQ Boxitonline',
-        name: 'FAQ page',
+        description: schemaDescription,
+        name: schemaTitle,
       }}
     >
       <LayoutSingleColumn>
@@ -183,4 +187,6 @@ const FaqPage = () => {
   );
 };
 
-export default FaqPage;
+export default compose(
+  injectIntl
+)(FaqPage);
