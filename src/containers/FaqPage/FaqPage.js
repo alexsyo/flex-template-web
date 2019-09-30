@@ -26,14 +26,14 @@ const scrollToQuestion = (questionId) => {
   }
 }
 
-const AboutPage = () => {
+const FaqPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
 
   // prettier-ignore
   return (
     <StaticPage
-      title="About Us"
+      title="FAQ"
       schema={{
         '@context': 'http://schema.org',
         '@type': 'FaqPage',
@@ -183,4 +183,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default FaqPage;
