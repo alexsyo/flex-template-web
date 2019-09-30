@@ -78,6 +78,30 @@ const AboutPage = () => {
               >
                 <FormattedMessage id="FaqPage.question3" />
               </a>
+              <a
+                onClick={() => scrollToQuestion('question4')}
+                className={css.questionHeader}
+              >
+                <FormattedMessage id="FaqPage.question4" />
+              </a>
+              <a
+                onClick={() => scrollToQuestion('question5')}
+                className={css.questionHeader}
+              >
+                <FormattedMessage id="FaqPage.question5" />
+              </a>
+              <a
+                onClick={() => scrollToQuestion('question6')}
+                className={css.questionHeader}
+              >
+                <FormattedMessage id="FaqPage.question6" />
+              </a>
+              <a
+                onClick={() => scrollToQuestion('question7')}
+                className={css.questionHeader}
+              >
+                <FormattedMessage id="FaqPage.question7" />
+              </a>
 
 
               <h3 id="question1" className={css.question}>
@@ -99,6 +123,34 @@ const AboutPage = () => {
               </h3>
               <p>
                 <FormattedMessage id="FaqPage.answer3" />
+              </p>
+
+              <h3 id="question4" className={css.question}>
+                <FormattedMessage id="FaqPage.question4" />
+              </h3>
+              <p>
+                <FormattedMessage id="FaqPage.answer4" />
+              </p>
+
+              <h3 id="question5" className={css.question}>
+                <FormattedMessage id="FaqPage.question5" />
+              </h3>
+              <p>
+                <FormattedMessage id="FaqPage.answer5" />
+              </p>
+
+              <h3 id="question6" className={css.question}>
+                <FormattedMessage id="FaqPage.question6" />
+              </h3>
+              <p>
+                <FormattedMessage id="FaqPage.answer6" />
+              </p>
+
+              <h3 id="question7" className={css.question}>
+                <FormattedMessage id="FaqPage.question7" />
+              </h3>
+              <p>
+                <FormattedMessage id="FaqPage.answer7" />
               </p>
 
               <h2 id="contact">
