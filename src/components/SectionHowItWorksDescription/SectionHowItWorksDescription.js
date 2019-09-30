@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
 import leftImage from './images/shelves-demo.jpg';
+import laptopImage from './images/laptop.jpg';
+import reviewImage from './images/review.jpg';
+import carryBoxesImage from './images/carry-boxes.jpg';
 import { lazyLoadWithDimensions } from '../../util/contextHelpers';
 
 import { NamedLink } from '..';
@@ -35,7 +38,7 @@ const SectionHostDescription = props => {
 
         <div className={css.step}>
           <div className={css.stepImageWrapper}>
-            <LazyImage src={leftImage} className={css.stepImage} />
+            <LazyImage src={laptopImage} className={css.stepImage} />
           </div>
         </div>
       </div>
@@ -47,7 +50,7 @@ const SectionHostDescription = props => {
       <div className={css.steps}>
         <div className={css.step}>
           <div className={css.stepImageWrapper}>
-            <LazyImage src={leftImage} className={css.stepImage} />
+            <LazyImage src={carryBoxesImage} className={css.stepImage} />
           </div>
         </div>
 
@@ -77,7 +80,7 @@ const SectionHostDescription = props => {
 
         <div className={css.step}>
           <div className={css.stepImageWrapper}>
-            <LazyImage src={leftImage} className={css.stepImage} />
+            <LazyImage src={reviewImage} className={css.stepImage} />
           </div>
         </div>
       </div>
@@ -89,7 +92,7 @@ const SectionHostDescription = props => {
       <div className={css.steps}>
         <div className={css.step}>
           <div className={css.stepImageWrapper}>
-            <LazyImage src={leftImage} className={css.stepImage} />
+            <LazyImage src={reviewImage} className={css.stepImage} />
           </div>
         </div>
         
