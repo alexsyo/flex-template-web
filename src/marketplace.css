@@ -53,6 +53,20 @@
       url('../../assets/background-host.jpg');
   }
 
+  --backgroundHowItWorksImage: {
+    @apply --backgroundImageCommon;
+
+    /* Gradient direction and overlaying the black color on top of the image for better readability */
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+      url('../../assets/background-howitworks.jpg');
+
+    background-position: center 45%;
+
+    @media(max-width: 1023px) {
+      background-position: 75% 45%;
+    }
+  }
+
   /* ================ Colors ================ */
 
   --marketplaceColor: #00D9BA;

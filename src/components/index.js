@@ -169,6 +169,8 @@ export { default as SectionThumbnailLinks } from './SectionThumbnailLinks/Sectio
 export { default as SectionHostHero } from './SectionHostHero/SectionHostHero';
 export { default as SectionHostHowItWorks } from './SectionHostHowItWorks/SectionHostHowItWorks';
 export { default as SectionHostDescription } from './SectionHostDescription/SectionHostDescription';
+export { default as SectionHowItWorksHero } from './SectionHowItWorksHero/SectionHowItWorksHero';
+export { default as SectionHowItWorksDescription } from './SectionHowItWorksDescription/SectionHowItWorksDescription';
 export { default as Topbar } from './Topbar/Topbar';
 export { default as TopbarDesktop } from './TopbarDesktop/TopbarDesktop';
 export { default as TopbarMobileMenu } from './TopbarMobileMenu/TopbarMobileMenu';

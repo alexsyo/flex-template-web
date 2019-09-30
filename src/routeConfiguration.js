@@ -8,6 +8,7 @@ import {
   EmailVerificationPage,
   FaqPage,
   HostLandingPage,
+  HowItWorksLandingPage,
   InboxPage,
   LandingPage,
   ListingPage,
@@ -58,6 +59,11 @@ const routeConfiguration = () => {
       path: '/host',
       name: 'HostLandingPage',
       component: props => <HostLandingPage {...props} />
+    },
+    {
+      path: '/howitworks',
+      name: 'HowItWorksLandingPage',
+      component: props => <HowItWorksLandingPage {...props} />
     },
     {
       path: '/about',
