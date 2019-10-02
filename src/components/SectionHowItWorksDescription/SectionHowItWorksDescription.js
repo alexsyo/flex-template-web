@@ -5,7 +5,9 @@ import classNames from 'classnames';
 import laptopImage from './images/laptop.jpg';
 import reviewImage from './images/review.jpg';
 import carryBoxesImage from './images/carry-boxes.jpg';
+import leavingImage from './images/leaving.jpg';
 import { lazyLoadWithDimensions } from '../../util/contextHelpers';
+import { IconArrowHead } from '../';
 
 import { NamedLink } from '..';
 
@@ -28,10 +30,10 @@ const SectionHostDescription = props => {
       <div className={css.steps}>
         <div className={css.stepText}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHostDescription.title" />
+            <FormattedMessage id="SectionHowItWorksDescription1.title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHostDescription.text" />
+            <FormattedMessage id="SectionHowItWorksDescription1.text" />
           </p>
         </div>
 
@@ -43,7 +45,9 @@ const SectionHostDescription = props => {
       </div>
 
       <div className={css.arrowLeft}>
-        <div className={css.arrowImage} />
+        <div className={css.arrowImage}>
+          <IconArrowHead direction="left" />
+        </div>
       </div>
 
       <div className={css.steps}>
@@ -55,37 +59,41 @@ const SectionHostDescription = props => {
 
         <div className={css.stepText}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHostDescription.title" />
+            <FormattedMessage id="SectionHowItWorksDescription2.title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHostDescription.text" />
+            <FormattedMessage id="SectionHowItWorksDescription2.text" />
           </p>
         </div>
       </div>
 
       <div className={css.arrowRight}>
-        <div className={css.arrowImage} />
+        <div className={css.arrowImage}>
+          <IconArrowHead direction="right" />
+        </div>
       </div>
 
       <div className={css.steps}>
         <div className={css.stepText}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHostDescription.title" />
+            <FormattedMessage id="SectionHowItWorksDescription3.title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHostDescription.text" />
+            <FormattedMessage id="SectionHowItWorksDescription3.text" />
           </p>
         </div>
 
         <div className={css.step}>
           <div className={css.stepImageWrapper}>
-            <LazyImage src={reviewImage} className={css.stepImage} />
+            <LazyImage src={leavingImage} className={css.stepImage} />
           </div>
         </div>
       </div>
 
       <div className={css.arrowLeft}>
-        <div className={css.arrowImage} />
+        <div className={css.arrowImage}>
+          <IconArrowHead direction="left" />
+        </div>
       </div>
 
       <div className={css.steps}>
@@ -97,10 +105,10 @@ const SectionHostDescription = props => {
         
         <div className={css.stepText}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHostDescription.title" />
+            <FormattedMessage id="SectionHowItWorksDescription4.title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHostDescription.text" />
+            <FormattedMessage id="SectionHowItWorksDescription4.text" />
           </p>
         </div>
       </div>

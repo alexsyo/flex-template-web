@@ -40,8 +40,7 @@
 }
 
 .stepImage {
-  border-radius: 10px;
-  border: 6px solid #E4E4E4;
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -116,13 +115,22 @@
 }
 
 .arrowImage {
+  display: flex;
   position: absolute;
-  top: calc(50% - 60px);
-  left: calc(50% - 60px);
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
   z-index: 1;
   border-radius: 120%;
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
   border: 6px solid #E4E4E4;
   background: white;
+}
+
+.arrowImage > svg {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: #949494;
+  stroke: #949494;
 }
