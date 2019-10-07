@@ -5,6 +5,7 @@
   flex-direction: column;
 
   @media (--viewportMedium) {
+    padding: 30px 0;
     flex-direction: row;
   }
 }
@@ -20,7 +21,7 @@
 .stepText {
   position: relative;
   @media (--viewportMedium) {
-    padding: 30px 60px;
+    padding: 0 60px;
     width: 50%;
   }
 }
