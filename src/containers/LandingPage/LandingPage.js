@@ -53,6 +53,7 @@ export const LandingPageComponent = props => {
         image: [schemaImage],
       }}
     >
+      test yoyo uga uga
       <LayoutSingleColumn>
         <LayoutWrapperTopbar>
           <TopbarContainer />
