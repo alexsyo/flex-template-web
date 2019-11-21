@@ -1,0 +1,26 @@
+@import '../../marketplace.css';
+
+.languageDropdown {
+  position: absolute;
+  width: 40px;
+  bottom: -40px;
+  margin: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+  box-shadow: var(--boxShadowPopup);
+  z-index: calc(var(--zIndexPopup) + 1);
+}
+
+.languageSelection {
+  &:hover,
+  &.highlighted {
+    background-color: var(--marketplaceColor);
+    cursor: pointer;
+  }
+
+  & img {
+    margin: 10px;
+  }
+}

@@ -107,6 +107,9 @@ export { LinkTabNavHorizontal, ButtonTabNavHorizontal } from './TabNavHorizontal
 export { default as Tabs } from './Tabs/Tabs';
 export { default as UserNav } from './UserNav/UserNav';
 
+// Language Selection
+export { default as LanguageSelection } from './LanguageSelection/LanguageSelection';
+
 ///////////////////////////////////////////////
 // These components include other components //
 ///////////////////////////////////////////////
@@ -174,4 +177,5 @@ export { default as SectionHowItWorksDescription } from './SectionHowItWorksDesc
 export { default as Topbar } from './Topbar/Topbar';
 export { default as TopbarDesktop } from './TopbarDesktop/TopbarDesktop';
 export { default as TopbarMobileMenu } from './TopbarMobileMenu/TopbarMobileMenu';
+export { default as TopbarLanguageMenu } from './TopbarLanguageMenu/TopbarLanguageMenu';
 export { default as TransactionPanel } from './TransactionPanel/TransactionPanel';

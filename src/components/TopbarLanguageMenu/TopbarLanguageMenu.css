@@ -1,0 +1,11 @@
+.topbarLanguageMenuRoot {
+  position: relative;
+  width: 40px;
+  height: 100%;
+}
+
+.topbarLanguageIcon {
+  margin: 0 10px;
+  height: 100%;
+  width: 20px;
+}

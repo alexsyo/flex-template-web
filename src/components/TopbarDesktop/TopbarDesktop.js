@@ -15,6 +15,7 @@ import {
   NamedLink,
 } from '../../components';
 import { TopbarSearchForm } from '../../forms';
+import { TopbarLanguageMenu } from '../../components';
 
 import css from './TopbarDesktop.css';
 
@@ -116,6 +117,14 @@ const TopbarDesktop = props => {
     </Menu>
   ) : null;
 
+  const languageMenu = (
+    <div className={css.languageLink}>
+      <div className={css.language}>
+        <TopbarLanguageMenu />
+      </div>
+    </div>
+  );
+
   const signupLink = isAuthenticatedOrJustHydrated ? null : (
     <NamedLink name="SignupPage" className={css.signupLink}>
       <span className={css.signup}>
@@ -151,6 +160,7 @@ const TopbarDesktop = props => {
       {profileMenu}
       {signupLink}
       {loginLink}
+      {languageMenu}
     </nav>
   );
 };

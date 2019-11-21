@@ -257,10 +257,21 @@
   }
 }
 
+.languageLink {
+  flex-shrink: 0;
+  height: 100%;
+}
+
 .signup,
-.login {
+.login,
+.language {
   @apply --marketplaceH4FontStyles;
   @apply --TopbarDesktop_label;
+}
+
+.language {
+  margin: 0;
+  height: 100%;
 }
 
 /* left animated "border" like hover element */
