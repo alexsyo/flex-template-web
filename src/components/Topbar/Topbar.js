@@ -139,12 +139,14 @@ class TopbarComponent extends Component {
       currentUserHasListings,
       currentUserHasOrders,
       currentPage,
+      currentLang,
       notificationCount,
       viewport,
       intl,
       location,
       onManageDisableScrolling,
       onResendVerificationEmail,
+      onChangeLocale,
       sendVerificationEmailInProgress,
       sendVerificationEmailError,
       showGenericError,
@@ -219,12 +221,14 @@ class TopbarComponent extends Component {
             currentUserHasListings={currentUserHasListings}
             currentUser={currentUser}
             currentPage={currentPage}
+            currentLang={currentLang}
             initialSearchFormValues={initialSearchFormValues}
             intl={intl}
             isAuthenticated={isAuthenticated}
             notificationCount={notificationCount}
             onLogout={this.handleLogout}
             onSearchSubmit={this.handleSubmit}
+            onChangeLocale={onChangeLocale}
           />
         </div>
         <Modal

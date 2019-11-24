@@ -7,6 +7,7 @@ import { propTypes } from '../../util/types';
 import { sendVerificationEmail, hasCurrentUserErrors } from '../../ducks/user.duck';
 import { logout, authenticationInProgress } from '../../ducks/Auth.duck';
 import { manageDisableScrolling } from '../../ducks/UI.duck';
+import { changeLocale } from '../../ducks/Locale.duck';
 import { Topbar } from '../../components';
 
 export const TopbarContainerComponent = props => {
@@ -17,6 +18,7 @@ export const TopbarContainerComponent = props => {
     currentUser,
     currentUserHasListings,
     currentUserHasOrders,
+    currentLang,
     history,
     isAuthenticated,
     hasGenericError,
@@ -24,6 +26,7 @@ export const TopbarContainerComponent = props => {
     notificationCount,
     onLogout,
     onManageDisableScrolling,
+    onChangeLocale,
     sendVerificationEmailInProgress,
     sendVerificationEmailError,
     onResendVerificationEmail,
@@ -38,6 +41,7 @@ export const TopbarContainerComponent = props => {
       currentUser={currentUser}
       currentUserHasListings={currentUserHasListings}
       currentUserHasOrders={currentUserHasOrders}
+      currentLang={currentLang}
       history={history}
       isAuthenticated={isAuthenticated}
       location={location}
@@ -45,6 +49,7 @@ export const TopbarContainerComponent = props => {
       onLogout={onLogout}
       onManageDisableScrolling={onManageDisableScrolling}
       onResendVerificationEmail={onResendVerificationEmail}
+      onChangeLocale={onChangeLocale}
       sendVerificationEmailInProgress={sendVerificationEmailInProgress}
       sendVerificationEmailError={sendVerificationEmailError}
       showGenericError={hasGenericError}
@@ -98,6 +103,7 @@ const mapStateToProps = state => {
     sendVerificationEmailError,
   } = state.user;
   const hasGenericError = !!(logoutError || hasCurrentUserErrors(state));
+  const currentLang = state.Locale
   return {
     authInProgress: authenticationInProgress(state),
     currentUser,
@@ -108,6 +114,7 @@ const mapStateToProps = state => {
     sendVerificationEmailInProgress,
     sendVerificationEmailError,
     hasGenericError,
+    currentLang,
   };
 };
 
@@ -116,6 +123,7 @@ const mapDispatchToProps = dispatch => ({
   onManageDisableScrolling: (componentId, disableScrolling) =>
     dispatch(manageDisableScrolling(componentId, disableScrolling)),
   onResendVerificationEmail: () => dispatch(sendVerificationEmail()),
+  onChangeLocale: locale => dispatch(changeLocale(locale))
 });
 
 // Note: it is important that the withRouter HOC is **outside** the

@@ -8,6 +8,7 @@ import Auth from './Auth.duck';
 import EmailVerification from './EmailVerification.duck';
 import FlashNotification from './FlashNotification.duck';
 import LocationFilter from './LocationFilter.duck';
+import Locale from './Locale.duck';
 import Routing from './Routing.duck';
 import UI from './UI.duck';
 import marketplaceData from './marketplaceData.duck';
@@ -20,6 +21,7 @@ export {
   EmailVerification,
   FlashNotification,
   LocationFilter,
+  Locale,
   Routing,
   UI,
   marketplaceData,

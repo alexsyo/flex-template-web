@@ -24,6 +24,7 @@ const TopbarDesktop = props => {
     className,
     currentUser,
     currentPage,
+    currentLang,
     rootClassName,
     currentUserHasListings,
     notificationCount,
@@ -32,6 +33,7 @@ const TopbarDesktop = props => {
     onLogout,
     onSearchSubmit,
     initialSearchFormValues,
+    onChangeLocale,
   } = props;
   const [mounted, setMounted] = useState(false);
 
@@ -120,7 +122,10 @@ const TopbarDesktop = props => {
   const languageMenu = (
     <div className={css.languageLink}>
       <div className={css.language}>
-        <TopbarLanguageMenu />
+        <TopbarLanguageMenu
+          currentLang={currentLang}
+          onChangeLocale={onChangeLocale}
+        />
       </div>
     </div>
   );

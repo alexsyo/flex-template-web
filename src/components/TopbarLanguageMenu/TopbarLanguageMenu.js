@@ -3,23 +3,22 @@ import { LanguageSelection } from '../../components';
 import css from './TopbarLanguageMenu.css';
 import { translations } from '../../locale/config';
 
-function TopbarLanguageMenu() {
+function TopbarLanguageMenu({ currentLang, onChangeLocale }) {
   const [showMenu, setShowMenu] = useState(false)
-  const [lang, setLang] = useState('en');
 
   const handleLanguageClick = (lang) => {
     setShowMenu(false)
-    setLang(lang)
+    onChangeLocale(lang)
   }
 
   return (
     <div className={css.topbarLanguageMenuRoot}>
       <img
         className={css.topbarLanguageIcon}
-        src={translations[lang].flag}
+        src={translations[currentLang].flag}
         onClick={() => setShowMenu(!showMenu)}
       />
-      {showMenu && <LanguageSelection currentLang={lang} handleClick={handleLanguageClick} />}
+      {showMenu && <LanguageSelection currentLang={currentLang} handleClick={handleLanguageClick} />}
     </div>
   );
 }
