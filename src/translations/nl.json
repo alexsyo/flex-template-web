@@ -50,7 +50,6 @@
 	"BookingBreakdown.baseUnitNight": "{unitPrice} * {quantity, number} {quantity, plural, one {night} other {nights}}",
 	"BookingBreakdown.baseUnitQuantity": "{unitPrice} * {quantity, number} {quantity, plural, one {person} other {persons}}",
 	"BookingBreakdown.bookingStart": "Boeking einde",
-	"BookingBreakdown.bookingStart": "Boeking start",
 	"BookingBreakdown.commission": "Boxitonline vergoeding *",
 	"BookingBreakdown.commissieFeeNote": "* De vergoeding helpt ons het platform te runnen en je de best mogelijke service te bieden!",
 	"BookingBreakdown.dayCount": "{count, number} {count, plural, one {day} andere {days}}",
