@@ -83,6 +83,10 @@ const TopbarMobileMenu = props => {
 
   return (
     <div className={css.root}>
+      <TopbarLanguageMenu
+        currentLang={currentLang}
+        onChangeLocale={onChangeLocale}
+      />
       <AvatarLarge className={css.avatar} user={currentUser} />
       <div className={css.content}>
         <span className={css.greeting}>
