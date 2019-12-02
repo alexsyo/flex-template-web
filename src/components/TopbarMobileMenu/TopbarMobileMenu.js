@@ -9,7 +9,7 @@ import classNames from 'classnames';
 import { ACCOUNT_SETTINGS_PAGES } from '../../routeConfiguration';
 import { propTypes } from '../../util/types';
 import { ensureCurrentUser } from '../../util/data';
-import { AvatarLarge, InlineTextButton, NamedLink, NotificationBadge } from '../../components';
+import { AvatarLarge, InlineTextButton, NamedLink, NotificationBadge, TopbarLanguageMenu } from '../../components';
 
 import css from './TopbarMobileMenu.css';
 
@@ -19,8 +19,10 @@ const TopbarMobileMenu = props => {
     currentPage,
     currentUserHasListings,
     currentUser,
+    currentLang,
     notificationCount,
     onLogout,
+    onChangeLocale,
   } = props;
 
   const user = ensureCurrentUser(currentUser);
@@ -45,6 +47,11 @@ const TopbarMobileMenu = props => {
     );
     return (
       <div className={css.root}>
+        <TopbarLanguageMenu
+          currentLang={currentLang}
+          onChangeLocale={onChangeLocale}
+        />
+
         <div className={css.content}>
           <div className={css.authenticationGreeting}>
             <FormattedMessage

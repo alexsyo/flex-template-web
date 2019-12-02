@@ -3,14 +3,21 @@
 .languageDropdown {
   position: absolute;
   width: 40px;
-  bottom: -40px;
+  bottom: -50px;
   margin: 0;
   right: 0;
+  left: -8px;
   background-color: #FFFFFF;
   border-bottom-left-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
-  box-shadow: var(--boxShadowPopup);
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.3);
   z-index: calc(var(--zIndexPopup) + 1);
+
+  @media(--viewportMedium) {
+    left: 0;
+    bottom: -40px;
+    box-shadow: var(--boxShadowPopup)
+  }
 }
 
 .languageSelection {
