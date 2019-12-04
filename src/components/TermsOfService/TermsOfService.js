@@ -11,11 +11,11 @@ const TermsOfService = props => {
   // prettier-ignore
   return (
     <div className={classes}>
-      <p className={css.lastUpdated}>Last updated: November 23, 2019</p>
+      <p className={css.lastUpdated}>Last updated: November 28, 2019</p>
 
       <p>
         Welcome to Boxitonline.com, a peer-to-peer storage space rental marketplace and online service 
-        provided by Marco Nicotra, hereafter Boxitonline, we or us. 
+        provided by Boxitonline, hereafter Boxitonline, we or us. 
         This Terms of Service Agreement (the Agreement) describes the terms and conditions that govern 
         your use of and participation in Boxitonline services (the Service(s)). 
         By accessing or using the Service, you signify that you have read, understood, and agree to be bound by this Agreement.  
