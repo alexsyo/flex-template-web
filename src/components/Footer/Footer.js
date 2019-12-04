@@ -72,6 +72,23 @@ const Footer = props => {
                 <p className={css.organizationDescription}>
                   <FormattedMessage id="Footer.organizationDescription" />
                 </p>
+                <ul>
+                  <li>
+                    <p className={css.organizationLegal}>
+                      <span>Bank: NL46INGB0007800417</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p className={css.organizationLegal}>
+                      <span>KvK: 76465675</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p className={css.organizationLegal}>
+                      <span>BTW: ...</span>
+                    </p>
+                  </li>
+                </ul>
                 <p className={css.organizationCopyright}>
                   <NamedLink name="LandingPage" className={css.copyrightLink}>
                     <FormattedMessage id="Footer.copyright" />
