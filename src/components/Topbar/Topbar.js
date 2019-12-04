@@ -171,6 +171,8 @@ class TopbarComponent extends Component {
         onLogout={this.handleLogout}
         notificationCount={notificationCount}
         currentPage={currentPage}
+        currentLang={currentLang}
+        onChangeLocale={onChangeLocale}
       />
     );
 
