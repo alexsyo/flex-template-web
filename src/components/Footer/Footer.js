@@ -75,17 +75,17 @@ const Footer = props => {
                 <ul>
                   <li>
                     <p className={css.organizationLegal}>
-                      <span>Bank: NL46INGB0007800417</span>
+                      <FormattedMessage id="Footer.bank" />
                     </p>
                   </li>
                   <li>
                     <p className={css.organizationLegal}>
-                      <span>KvK: 76465675</span>
+                      <FormattedMessage id="Footer.kvk" />
                     </p>
                   </li>
                   <li>
                     <p className={css.organizationLegal}>
-                      <span>BTW: ...</span>
+                      <FormattedMessage id="Footer.btw" />
                     </p>
                   </li>
                 </ul>
@@ -162,6 +162,25 @@ const Footer = props => {
                   >
                     <FormattedMessage id="Footer.searchRotterdam" />
                   </NamedLink>
+                </li>
+              </ul>
+            </div>
+            <div className={css.business}>
+              <ul className={css.list}>
+                <li className={css.listItem}>
+                  <p className={css.organizationLegal}>
+                    <FormattedMessage id="Footer.bank" />
+                  </p>
+                </li>
+                <li className={css.listItem}>
+                  <p className={css.organizationLegal}>
+                    <FormattedMessage id="Footer.kvk" />
+                  </p>
+                </li>
+                <li className={css.listItem}>
+                  <p className={css.organizationLegal}>
+                    <FormattedMessage id="Footer.btw" />
+                  </p>
                 </li>
               </ul>
             </div>

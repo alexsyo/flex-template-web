@@ -131,9 +131,17 @@
 }
 
 .organizationLegal {
-  @apply --marketplaceTinyFontStyles;
+  @apply --marketplaceH4FontStyles;
+  line-height: 20px;
+  color: var(--matterColor);
   margin-top: 5px;
   margin-bottom: 0;
+
+  @media (--viewportMedium) {
+    @apply --marketplaceTinyFontStyles;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 }
 
 .organizationCopyright {
@@ -242,6 +250,16 @@
   }
   @media (--viewportLarge) {
     margin-right: 0;
+  }
+}
+
+.business {
+  order: 6;
+  margin-right: 24px;
+  margin-bottom: 24px;
+
+  @media (--viewportMedium) {
+    display: none;
   }
 }
 
