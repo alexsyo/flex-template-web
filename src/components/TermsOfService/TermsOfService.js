@@ -174,8 +174,8 @@ const TermsOfService = props => {
       </p>
 
       <p>
-        •	Boxitonline shall charge a commission of …% of the price set by the Storage Provider. 
-        This will be added to the price automatically, and the Storage Seeker will pay the total amount through the payment platform, 
+        •	Boxitonline shall charge a commission of 20% of the price set by the Storage Provider. 
+        This will be deducted from the price automatically, and the Storage Seeker will pay the total amount through the payment platform, 
         through which the payments to the Storage Provider and Boxitonline are processed. 
       </p>
 
@@ -193,11 +193,11 @@ const TermsOfService = props => {
         the Storage Seeker access to the storage space and may hold on to or move the goods already stored at its discretion.
       </p>
 
-      <p>
+      {/* <p>
         •	The monthly storage price agreed between the Storage Seeker and Storage Provider will remain fixed for at least the first 12 months 
         of the Storage Agreement. After this initial period, the Storage Provider may increase the monthly price by up to 3% a year, 
         providing they give a 30-day written notice to the Storage Seeker and Boxitonline in advance. 
-      </p>
+      </p> */}
 
 
       <h2>Article 6 – Liability and Indemnification</h2>
