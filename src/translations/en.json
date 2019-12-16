@@ -201,7 +201,7 @@
   "EditListingPhotosPanel.payoutModalTitlePayoutPreferences": "Payout preferences",
   "EditListingPhotosPanel.title": "Edit the photos of {listingTitle}",
   "EditListingPoliciesForm.rulesLabel": "Storage rules",
-  "EditListingPoliciesForm.rulesPlaceholder": "- Describe your availability in time / hours\n- Define the accessibility rules for your storage\n- Add any other conditions to submit to your customer",
+  "EditListingPoliciesForm.rulesPlaceholder": "- What time / hours are you usually available?\n- When can the customers access the storage?\n- Is there anything else you want to mention?",
   "EditListingPoliciesForm.showListingFailed": "Fetching listing data failed",
   "EditListingPoliciesForm.updateFailed": "Failed to update listing. Please try again.",
   "EditListingPoliciesPanel.createListingTitle": "Time to set some rules.",
