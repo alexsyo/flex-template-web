@@ -67,6 +67,8 @@ exports.sitemapStructure = () => {
       '/account': ['get'],
       '/reset-password': ['get'],
       '/verify-email': ['get'],
+      '/host': ['get'],
+      '/how': ['get'],
     },
     route: {
       '/': {
@@ -80,6 +82,16 @@ exports.sitemapStructure = () => {
         priority: 1.0,
       },
       '/login': {
+        lastmod: now,
+        changefreq: 'always',
+        priority: 1.0,
+      },
+      '/host': {
+        lastmod: now,
+        changefreq: 'always',
+        priority: 1.0,
+      },
+      '/how': {
         lastmod: now,
         changefreq: 'always',
         priority: 1.0,
