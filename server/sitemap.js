@@ -61,14 +61,14 @@ exports.sitemapStructure = () => {
       '/': ['get'],
       '/signup': ['get'],
       '/login': ['get'],
+      '/host': ['get'],
+      '/how': ['get'],
       '/s?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands&bounds=52.51762811%2C5.12390605%2C52.19380373%2C4.61517488': [
         'get',
       ],
       '/account': ['get'],
       '/reset-password': ['get'],
       '/verify-email': ['get'],
-      '/host': ['get'],
-      '/how': ['get'],
     },
     route: {
       '/': {
