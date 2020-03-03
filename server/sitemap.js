@@ -86,7 +86,7 @@ exports.sitemapStructure = () => {
         changefreq: 'always',
         priority: 1.0,
       },
-      '/s?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands&amp;bounds=52.51762811%2C5.12390605%2C52.19380373%2C4.61517488': {
+      '/s?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands%26bounds=52.51762811%2C5.12390605%2C52.19380373%2C4.61517488': {
         changefreq: 'always',
         priority: 1.0,
       },
