@@ -135,3 +135,15 @@
   fill: #949494;
   stroke: #949494;
 }
+
+.heroButton {
+  @apply --marketplaceButtonStyles;
+  @apply --SectionHero_animation;
+
+  animation-delay: 0.8s;
+
+  @media (--viewportMedium) {
+    display: block;
+    width: 260px;
+  }
+}

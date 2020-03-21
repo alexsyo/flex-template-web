@@ -112,6 +112,22 @@ const SectionHostDescription = props => {
           </p>
         </div>
       </div>
+
+      <div className={css.steps}>
+        <p>
+          <NamedLink
+            name="SearchPage"
+            to={{
+              search:
+                'address=Netherlands&bounds=53.665238%2C7.230902%2C50.750667%2C3.1862592',
+            }}
+            className={css.heroButton}
+          >
+            <FormattedMessage id="SectionHowItWorksHero.browseButton" />
+          </NamedLink>
+        </p>
+      </div>
+
     </div>
   );
 };
