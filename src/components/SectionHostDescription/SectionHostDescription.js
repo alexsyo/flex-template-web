@@ -44,7 +44,8 @@ const SectionHostDescription = props => {
           <p>
             <FormattedMessage id="SectionHostDescription.text" />
           </p>
-          <NamedLink name="NewListingPage">
+          
+          <NamedLink name="NewListingPage" className={css.heroButton}>
             <FormattedMessage id="SectionHostDescription.joinLink" />
           </NamedLink>
         </div>
