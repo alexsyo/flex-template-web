@@ -8,7 +8,7 @@ const LanguageSelection = ({ currentLang, handleClick }) => (
     .filter(c => c !== currentLang)
     .map(country => (
       <li key={country} className={css.languageSelection} onClick={() => handleClick(country)}>
-        <img src={translations[country].flag} />
+        <img src={translations[country].flag} alt={country} />
       </li>
     ))}
   </ul>

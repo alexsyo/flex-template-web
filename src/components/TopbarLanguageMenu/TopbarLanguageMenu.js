@@ -17,6 +17,7 @@ function TopbarLanguageMenu({ currentLang, onChangeLocale }) {
         className={css.topbarLanguageIcon}
         src={translations[currentLang].flag}
         onClick={() => setShowMenu(!showMenu)}
+        alt={currentLang}
       />
       {showMenu && <LanguageSelection currentLang={currentLang} handleClick={handleLanguageClick} />}
     </div>
