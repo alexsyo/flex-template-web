@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SectionHero matches snapshot 1`] = `
+exports[`SectionHowItWorksHero matches snapshot 1`] = `
 <div
   className=""
 >
   <div>
     <h1>
       <span>
-        SectionHero.title
+        SectionHowItWorksHero.title
       </span>
     </h1>
     <h2>
       <span>
-        SectionHero.subTitle
+        SectionHowItWorksHero.subTitle
       </span>
     </h2>
     <Link
@@ -41,7 +41,7 @@ exports[`SectionHero matches snapshot 1`] = `
           title={null}
         >
           <span>
-            SectionHero.browseButton
+            SectionHowItWorksHero.browseButton
           </span>
         </a>
       </LinkAnchor>

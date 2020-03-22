@@ -24,8 +24,8 @@ describe('NamedLinkComponent', () => {
 
     const aLink = tree.children[0];
     const bLink = tree.children[1];
-    expect(aLink.type).toEqual('a');
-    expect(bLink.type).toEqual('a');
+    expect(aLink.type).toEqual('Link');
+    expect(bLink.type).toEqual('Link');
     expect(aLink.props.className).toEqual(activeClassName);
     expect(bLink.props.className).toEqual('');
   });
@@ -39,7 +39,7 @@ describe('NamedLink', () => {
         to ListingPage
       </NamedLink>
     );
-    expect(tree.type).toEqual('a');
+    expect(tree.type).toEqual('Link');
     expect(tree.props.href).toEqual(`/l/${id}`);
     expect(tree.children).toEqual(['to ListingPage']);
   });

@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LandingPage matches snapshot 1`] = `
+exports[`HowItWorksLandingPage matches snapshot 1`] = `
 <Page
   contentType="website"
-  description="LandingPage.schemaDescription"
+  description="HowItWorksLandingPage.schemaDescription"
   facebookImages={
     Array [
       Object {
         "height": 630,
-        "url": "saunatimeFacebook-1200x630.jpg",
+        "url": "boxitFacebook-1200.jpg",
         "width": 1200,
       },
     ]
@@ -17,20 +17,20 @@ exports[`LandingPage matches snapshot 1`] = `
     Object {
       "@context": "http://schema.org",
       "@type": "WebPage",
-      "description": "LandingPage.schemaDescription",
+      "description": "HowItWorksLandingPage.schemaDescription",
       "image": Array [
-        "http://localhost:3000saunatimeFacebook-1200x630.jpg",
+        "http://localhost:3000boxitFacebook-1200.jpg",
       ],
-      "name": "LandingPage.schemaTitle",
+      "name": "HowItWorksLandingPage.schemaTitle",
     }
   }
   scrollingDisabled={false}
-  title="LandingPage.schemaTitle"
+  title="HowItWorksLandingPage.schemaTitle"
   twitterImages={
     Array [
       Object {
         "height": 314,
-        "url": "http://localhost:3000saunatimeTwitter-600x314.jpg",
+        "url": "http://localhost:3000boxitTwitter-600.jpg",
         "width": 600,
       },
     ]
@@ -51,7 +51,7 @@ exports[`LandingPage matches snapshot 1`] = `
       rootClassName={null}
     >
       <div>
-        <SectionHero
+        <SectionHowItWorksHero
           className={null}
           history={
             Object {
@@ -89,7 +89,7 @@ exports[`LandingPage matches snapshot 1`] = `
       className={null}
       rootClassName={null}
     >
-      <InjectIntl(Footer) />
+      <injectIntl(Footer) />
     </LayoutWrapperFooter>
   </LayoutSingleColumn>
 </Page>

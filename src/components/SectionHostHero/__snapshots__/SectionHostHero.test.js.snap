@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHero matches snapshot 1`] = `
+<div
+  className=""
+>
+  <div>
+    <h1>
+      <span>
+        SectionHostHero.title
+      </span>
+    </h1>
+    <h2>
+      <span>
+        SectionHostHero.subTitle
+      </span>
+    </h2>
+    <Link
+      className=""
+      style={Object {}}
+      title={null}
+      to={
+        Object {
+          "pathname": "/l/new",
+        }
+      }
+    >
+      <LinkAnchor
+        className=""
+        href="/l/new"
+        navigate={[Function]}
+        style={Object {}}
+        title={null}
+      >
+        <a
+          className=""
+          href="/l/new"
+          onClick={[Function]}
+          style={Object {}}
+          title={null}
+        >
+          <span>
+            SectionHostHero.browseButton
+          </span>
+        </a>
+      </LinkAnchor>
+    </Link>
+  </div>
+  <div>
+    <h2>
+      <span>
+        PriceCaclulator.title
+      </span>
+    </h2>
+    <label
+      htmlFor="priceCalculator.spaceAvailable"
+    >
+      PriceCaclulator.spaceAvailableLabel
+    </label>
+    <input
+      id="priceCalculator.spaceAvailable"
+      name="priceCalculator.spaceAvailable"
+      onChange={[Function]}
+      type="number"
+      value={1}
+    />
+    <p>
+      <span>
+        $60.00
+         
+      </span>
+      <span>
+        <span>
+          PriceCalculator.footer
+        </span>
+      </span>
+    </p>
+  </div>
+</div>
+`;

@@ -108,7 +108,7 @@
 
 .sectionContentFirstChild {
   composes: sectionContent;
-
+  
   @media(--viewportMedium) {
     margin-top: 175px;
     margin-top: 8vh;

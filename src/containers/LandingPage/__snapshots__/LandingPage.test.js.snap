@@ -8,7 +8,7 @@ exports[`LandingPage matches snapshot 1`] = `
     Array [
       Object {
         "height": 630,
-        "url": "saunatimeFacebook-1200x630.jpg",
+        "url": "boxitFacebook-1200.jpg",
         "width": 1200,
       },
     ]
@@ -19,7 +19,7 @@ exports[`LandingPage matches snapshot 1`] = `
       "@type": "WebPage",
       "description": "LandingPage.schemaDescription",
       "image": Array [
-        "http://localhost:3000saunatimeFacebook-1200x630.jpg",
+        "http://localhost:3000boxitFacebook-1200.jpg",
       ],
       "name": "LandingPage.schemaTitle",
     }
@@ -30,7 +30,7 @@ exports[`LandingPage matches snapshot 1`] = `
     Array [
       Object {
         "height": 314,
-        "url": "http://localhost:3000saunatimeTwitter-600x314.jpg",
+        "url": "http://localhost:3000boxitTwitter-600.jpg",
         "width": 600,
       },
     ]
@@ -69,7 +69,7 @@ exports[`LandingPage matches snapshot 1`] = `
       <ul>
         <li>
           <div>
-            <SectionLocations
+            <SectionLandingPageDescription
               className={null}
               rootClassName={null}
             />
@@ -77,7 +77,7 @@ exports[`LandingPage matches snapshot 1`] = `
         </li>
         <li>
           <div>
-            <SectionHowItWorks
+            <SectionHostHowItWorks
               className={null}
               rootClassName={null}
             />

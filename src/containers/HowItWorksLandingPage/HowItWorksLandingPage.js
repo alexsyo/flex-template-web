@@ -9,15 +9,15 @@ import config from '../../config';
 import {
   Page,
   SectionHowItWorksHero,
-  SectionHowItWorksDescription,
-  SectionHostHowItWorks,
+  SectionHowItWorks,
+  SectionLocations,
   LayoutSingleColumn,
   LayoutWrapperTopbar,
   LayoutWrapperMain,
   LayoutWrapperFooter,
   Footer,
 } from '../../components';
-import { TopbarContainer } from '..';
+import { TopbarContainer } from '../../containers';
 
 import facebookImage from '../../assets/boxitFacebook-1200.jpg';
 import twitterImage from '../../assets/boxitTwitter-600.jpg';
@@ -64,12 +64,12 @@ export const HowItWorksLandingPageComponent = props => {
           <ul className={css.sections}>
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
-                <SectionHowItWorksDescription />
+                <SectionLocations />
               </div>
             </li>
             <li className={css.section}>
               <div className={css.sectionContent}>
-                <SectionHostHowItWorks />
+                <SectionHowItWorks />
               </div>
             </li>
           </ul>

@@ -40,15 +40,20 @@
     min-height: 600px;
     height: calc(70vh - var(--topbarHeightDesktop));
   }
+
+  @media (orientation: landscape) and (max-height: 375px) {
+    height: 100%;
+  }
 }
 
 .hero {
   flex-grow: 1;
   justify-content: flex-end;
-  padding-bottom: 32px;
+  position: relative;
 
   @media (--viewportMedium) {
     padding-bottom: 83px;
+    flex-direction: row;
   }
 
   @media (--viewportLarge) {
@@ -103,7 +108,11 @@
 
 .sectionContentFirstChild {
   composes: sectionContent;
-  margin-top: 8vh;
+
+  @media(--viewportMedium) {
+    margin-top: 175px;
+    margin-top: 8vh;
+  }
 }
 
 /* A bar on top of light sections */

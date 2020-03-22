@@ -44,7 +44,7 @@ export const ACCOUNT_SETTINGS_PAGES = [
 const draftId = '00000000-0000-0000-0000-000000000000';
 const draftSlug = 'draft';
 
-const RedirectToLandingPage = () => <NamedRedirect name="HowItWorksLandingPage" />;
+const RedirectToLandingPage = () => <NamedRedirect name="LandingPage" />;
 
 // Our routes are exact by default.
 // See behaviour from Routes.js where Route is created.
@@ -52,6 +52,11 @@ const routeConfiguration = () => {
   return [
     {
       path: '/',
+      name: 'LandingPage',
+      component: props => <LandingPage {...props} />,
+    },
+    {
+      path: '/how',
       name: 'HowItWorksLandingPage',
       component: props => <HowItWorksLandingPage {...props} />
     },
@@ -59,11 +64,6 @@ const routeConfiguration = () => {
       path: '/host',
       name: 'HostLandingPage',
       component: props => <HostLandingPage {...props} />
-    },
-    {
-      path: '/how',
-      name: 'LandingPage',
-      component: props => <LandingPage {...props} />,
     },
     {
       path: '/about',

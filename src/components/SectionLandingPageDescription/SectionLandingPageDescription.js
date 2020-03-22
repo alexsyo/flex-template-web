@@ -11,7 +11,7 @@ import { IconArrowHead } from '../';
 
 import { NamedLink } from '..';
 
-import css from './SectionHowItWorksDescription.css';
+import css from './SectionLandingPageDescription.css';
 
 // todo: add other images / content
 const DescriptionImage = ({ className, alt, ...rest }) => (
@@ -21,7 +21,7 @@ const DescriptionImage = ({ className, alt, ...rest }) => (
 );
 const LazyImage = lazyLoadWithDimensions(DescriptionImage);
 
-const SectionHostDescription = props => {
+const SectionLandingPageDescription = props => {
   const { rootClassName, className } = props;
 
   const classes = classNames(rootClassName || css.root, className);
@@ -30,10 +30,10 @@ const SectionHostDescription = props => {
       <div className={css.steps}>
         <div className={css.stepText}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorksDescription1.title" />
+            <FormattedMessage id="SectionLandingPageDescription1.title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHowItWorksDescription1.text" />
+            <FormattedMessage id="SectionLandingPageDescription1.text" />
           </p>
         </div>
 
@@ -59,10 +59,10 @@ const SectionHostDescription = props => {
 
         <div className={css.stepText}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorksDescription2.title" />
+            <FormattedMessage id="SectionLandingPageDescription2.title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHowItWorksDescription2.text" />
+            <FormattedMessage id="SectionLandingPageDescription2.text" />
           </p>
         </div>
       </div>
@@ -76,10 +76,10 @@ const SectionHostDescription = props => {
       <div className={css.steps}>
         <div className={css.stepText}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorksDescription3.title" />
+            <FormattedMessage id="SectionLandingPageDescription3.title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHowItWorksDescription3.text" />
+            <FormattedMessage id="SectionLandingPageDescription3.text" />
           </p>
         </div>
 
@@ -105,10 +105,10 @@ const SectionHostDescription = props => {
         
         <div className={css.stepText}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorksDescription4.title" />
+            <FormattedMessage id="SectionLandingPageDescription4.title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHowItWorksDescription4.text" />
+            <FormattedMessage id="SectionLandingPageDescription4.text" />
           </p>
         </div>
       </div>
@@ -132,13 +132,13 @@ const SectionHostDescription = props => {
   );
 };
 
-SectionHostDescription.defaultProps = { rootClassName: null, className: null };
+SectionLandingPageDescription.defaultProps = { rootClassName: null, className: null };
 
 const { string } = PropTypes;
 
-SectionHostDescription.propTypes = {
+SectionLandingPageDescription.propTypes = {
   rootClassName: string,
   className: string,
 };
 
-export default SectionHostDescription;
+export default SectionLandingPageDescription;

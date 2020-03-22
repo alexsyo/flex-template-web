@@ -1,16 +1,16 @@
 import React from 'react';
 import { fakeIntl } from '../../util/test-data';
 import { renderShallow } from '../../util/test-helpers';
-import { LandingPageComponent } from './HostLandingPage';
+import { HowItWorksLandingPageComponent } from './HowItWorksLandingPage';
 import { RoutesProvider } from '../../components';
 import routeConfiguration from '../../routeConfiguration';
 
 const noop = () => null;
 
-describe('LandingPage', () => {
+describe('HowItWorksLandingPage', () => {
   it('matches snapshot', () => {
     const tree = renderShallow(
-      <LandingPageComponent
+      <HowItWorksLandingPageComponent
         history={{ push: noop }}
         location={{ search: '' }}
         scrollingDisabled={false}

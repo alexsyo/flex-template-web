@@ -1,17 +1,17 @@
 import React from 'react';
 import { renderDeep } from '../../util/test-helpers';
-import SectionHero from './SectionHostHero';
+import SectionHowItWorksHero from './SectionHowItWorksHero';
 
 const noop = () => null;
 
-describe('SectionHero', () => {
+describe('SectionHowItWorksHero', () => {
   it('matches snapshot', () => {
     window.google = { maps: {} };
     const heroProps = {
       history: { push: noop },
       location: { search: '' },
     };
-    const tree = renderDeep(<SectionHero {...heroProps} />);
+    const tree = renderDeep(<SectionHowItWorksHero {...heroProps} />);
     delete window.google;
     expect(tree).toMatchSnapshot();
   });
