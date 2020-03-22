@@ -33,7 +33,7 @@ const defaultDirectives = {
     '*.stripe.com',
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
-  frameSrc: [self, '*.stripe.com', '*.facebook.com'],
+  frameSrc: [self, '*.stripe.com', '*.facebook.com', '*.hotjar.com'],
   imgSrc: [
     self,
     data,
@@ -58,6 +58,7 @@ const defaultDirectives = {
     'stats.g.doubleclick.net',
 
     '*.stripe.com',
+    '*.facebook.com',
   ],
   scriptSrc: [
     self,
@@ -68,6 +69,8 @@ const defaultDirectives = {
     'api.mapbox.com',
     '*.google-analytics.com',
     '*.googletagmanager.com',
+    '*.hotjar.com',
+    '*.facebook.net',
     'js.stripe.com',
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
