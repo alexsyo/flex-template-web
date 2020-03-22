@@ -31,8 +31,9 @@ const defaultDirectives = {
 
     'sentry.io',
     '*.stripe.com',
+    '*.hotjar.com',
   ],
-  fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
+  fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com', '*.hotjar.com'],
   frameSrc: [self, '*.stripe.com', '*.facebook.com', '*.hotjar.com'],
   imgSrc: [
     self,
@@ -54,6 +55,7 @@ const defaultDirectives = {
 
     // Google Analytics
     'www.google.com',
+    'www.google.nl',
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
 
@@ -71,6 +73,8 @@ const defaultDirectives = {
     '*.googletagmanager.com',
     '*.hotjar.com',
     '*.facebook.net',
+    '*.googleadservices.com',
+    'googleads.g.doubleclick.net',
     'js.stripe.com',
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
