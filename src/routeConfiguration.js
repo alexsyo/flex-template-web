@@ -44,7 +44,7 @@ export const ACCOUNT_SETTINGS_PAGES = [
 const draftId = '00000000-0000-0000-0000-000000000000';
 const draftSlug = 'draft';
 
-const RedirectToLandingPage = () => <NamedRedirect name="LandingPage" />;
+const RedirectToLandingPage = () => <NamedRedirect name="HowItWorksLandingPage" />;
 
 // Our routes are exact by default.
 // See behaviour from Routes.js where Route is created.
