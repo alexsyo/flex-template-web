@@ -67,6 +67,7 @@ const defaultDirectives = {
     'maps.googleapis.com',
     'api.mapbox.com',
     '*.google-analytics.com',
+    '*.googletagmanager.com',
     'js.stripe.com',
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
