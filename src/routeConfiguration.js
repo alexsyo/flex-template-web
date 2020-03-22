@@ -51,9 +51,9 @@ const RedirectToLandingPage = () => <NamedRedirect name="LandingPage" />;
 const routeConfiguration = () => {
   return [
     {
-      path: '/how',
-      name: 'LandingPage',
-      component: props => <LandingPage {...props} />,
+      path: '/',
+      name: 'HowItWorksLandingPage',
+      component: props => <HowItWorksLandingPage {...props} />
     },
     {
       path: '/host',
@@ -61,9 +61,9 @@ const routeConfiguration = () => {
       component: props => <HostLandingPage {...props} />
     },
     {
-      path: '/',
-      name: 'HowItWorksLandingPage',
-      component: props => <HowItWorksLandingPage {...props} />
+      path: '/how',
+      name: 'LandingPage',
+      component: props => <LandingPage {...props} />,
     },
     {
       path: '/about',
