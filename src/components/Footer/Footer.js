@@ -126,6 +126,21 @@ const Footer = props => {
               </ul>
             </div>
             <div className={css.searches}>
+              <p>
+                <ul className={css.list}>
+                  <li className={css.listItem}>
+                    <ExternalLink
+                      // key="linkToTwitter"
+                      href="https://blog.boxitonline.com"
+                      className={css.link}
+                      title="Footer.goToBlog"
+                    >
+                      <FormattedMessage id="Footer.toBlogPage" />
+                    </ExternalLink>
+                  </li>
+                </ul>
+              </p>
+
               <ul className={css.list}>
                 <li className={css.listItem}>
                   <NamedLink
