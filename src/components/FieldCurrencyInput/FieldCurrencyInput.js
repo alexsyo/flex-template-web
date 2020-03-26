@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 import { intlShape, injectIntl } from '../../util/reactIntl';
 import { Field } from 'react-final-form';
 import classNames from 'classnames';
+import { FormattedMessage } from '../../util/reactIntl';
 import Decimal from 'decimal.js';
 import { ValidationError } from '../../components';
 import { types as sdkTypes } from '../../util/sdkLoader';
@@ -263,7 +264,8 @@ const FieldCurrencyInputComponent = props => {
   return (
     <div className={classes}>
       {label ? <label htmlFor={id}>{label}</label> : null}
-      <CurrencyInput {...inputProps} />
+      <CurrencyInput {...inputProps} /> 
+      ({props.input.value.amount * 30 / 100 || 0} <FormattedMessage id="EditListingPricingForm.pricePerMonth" />)
       <ValidationError fieldMeta={meta} />
     </div>
   );
