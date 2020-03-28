@@ -104,6 +104,15 @@ const Footer = props => {
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
+                  <ExternalLink
+                    href="https://blog.boxitonline.com"
+                    className={css.link}
+                    title="Footer.goToBlog"
+                  >
+                    <FormattedMessage id="Footer.toBlogPage" />
+                  </ExternalLink>
+                </li>
+                <li className={css.listItem}>
                   <NamedLink name="AboutPage" className={css.link}>
                     <FormattedMessage id="Footer.toAboutPage" />
                   </NamedLink>
@@ -126,21 +135,6 @@ const Footer = props => {
               </ul>
             </div>
             <div className={css.searches}>
-              <p>
-                <ul className={css.list}>
-                  <li className={css.listItem}>
-                    <ExternalLink
-                      // key="linkToTwitter"
-                      href="https://blog.boxitonline.com"
-                      className={css.link}
-                      title="Footer.goToBlog"
-                    >
-                      <FormattedMessage id="Footer.toBlogPage" />
-                    </ExternalLink>
-                  </li>
-                </ul>
-              </p>
-
               <ul className={css.list}>
                 <li className={css.listItem}>
                   <NamedLink
