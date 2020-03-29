@@ -4,7 +4,7 @@ import { FormattedMessage, intlShape, injectIntl } from '../../util/reactIntl';
 import classNames from 'classnames';
 import { lazyLoadWithDimensions } from '../../util/contextHelpers';
 import { LINE_ITEM_DAY, LINE_ITEM_NIGHT, propTypes } from '../../util/types';
-import { formatMoney } from '../../util/currency';
+import { formatMoney, formatCurrencyMajorUnit } from '../../util/currency';
 import { ensureListing, ensureUser } from '../../util/data';
 import { richText } from '../../util/richText';
 import { createSlug } from '../../util/urlHelpers';
@@ -85,10 +85,10 @@ export const ListingCardComponent = props => {
       <div className={css.info}>
         <div className={css.price}>
           <div className={css.priceValue} title={priceTitle}>
-            {formattedPrice}
+            {formattedPrice} <span className={css.perUnit}><FormattedMessage id={unitTranslationKey} /></span>
           </div>
           <div className={css.perUnit}>
-            <FormattedMessage id={unitTranslationKey} />
+            ({formatCurrencyMajorUnit(intl, price.currency, price.amount * 30 / 100)} <FormattedMessage id="ListingCard.perMonth" />)
           </div>
         </div>
         <div className={css.mainInfo}>

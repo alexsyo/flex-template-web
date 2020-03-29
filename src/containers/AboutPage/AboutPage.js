@@ -14,7 +14,7 @@ import {
 } from '../../components';
 
 import css from './AboutPage.css';
-import image from './about-us-1056.jpg';
+import image from './people-2557396_1920.jpg';
 
 const AboutPage = ({ intl }) => {
   const { siteTitle, siteTwitterHandle, siteFacebookPage } = config;
@@ -43,7 +43,7 @@ const AboutPage = ({ intl }) => {
           <h1 className={css.pageTitle}>
             <FormattedMessage id="AboutPage.title" />
           </h1>
-          <img className={css.coverImage} src={image} alt="My first ice cream." />
+          <img className={css.coverImage} src={image} alt="Our team." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>

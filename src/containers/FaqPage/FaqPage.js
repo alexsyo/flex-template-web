@@ -157,6 +157,13 @@ const FaqPage = ({ intl }) => {
                 <FormattedMessage id="FaqPage.answer7" />
               </p>
 
+              <h3 id="question8" className={css.question}>
+                <FormattedMessage id="FaqPage.question8" />
+              </h3>
+              <p>
+                <FormattedMessage id="FaqPage.answer8" />
+              </p>
+
               <h2 id="contact">
                 <FormattedMessage id="AboutPage.getInTouchHeader" />
               </h2>
