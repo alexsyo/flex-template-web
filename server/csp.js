@@ -32,6 +32,7 @@ const defaultDirectives = {
     'sentry.io',
     '*.stripe.com',
     '*.hotjar.com',
+    '*.hotjar.io',
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com', '*.hotjar.com'],
   frameSrc: [self, '*.stripe.com', '*.facebook.com', '*.hotjar.com'],
