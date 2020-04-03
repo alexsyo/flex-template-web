@@ -26,13 +26,6 @@ exports[`EditListingPricingForm matches snapshot 1`] = `
       type="text"
       value=""
     />
-    (
-    0
-     
-    <span>
-      EditListingPricingForm.pricePerMonth
-    </span>
-    )
   </div>
   <button
     className=""

@@ -77,14 +77,6 @@ exports[`LandingPage matches snapshot 1`] = `
         </li>
         <li>
           <div>
-            <SectionLocations
-              className={null}
-              rootClassName={null}
-            />
-          </div>
-        </li>
-        <li>
-          <div>
             <SectionHostHowItWorks
               className={null}
               rootClassName={null}

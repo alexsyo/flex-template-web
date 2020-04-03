@@ -35,23 +35,12 @@ exports[`ListingCard matches snapshot 1`] = `
         title={55}
       >
         55
-         
-        <span>
-          <FormattedMessage
-            id="ListingCard.perNight"
-            values={Object {}}
-          />
-        </span>
       </div>
       <div>
-        (
-        1650
-         
         <FormattedMessage
-          id="ListingCard.perMonth"
+          id="ListingCard.perNight"
           values={Object {}}
         />
-        )
       </div>
     </div>
     <div>
