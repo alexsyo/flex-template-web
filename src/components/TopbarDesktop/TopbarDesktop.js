@@ -146,6 +146,20 @@ const TopbarDesktop = props => {
     </NamedLink>
   );
 
+  const storageLink = isAuthenticatedOrJustHydrated ? (
+    <NamedLink className={css.createListingLink} name="NewListingPage">
+        <span className={css.createListing}>
+          <FormattedMessage id="TopbarDesktop.createListing" />
+        </span>
+      </NamedLink>
+  ) : (
+    <NamedLink name="HostLandingPage" className={css.createListingLink}>
+      <span className={css.createListing}>
+        <FormattedMessage id="TopbarDesktop.becomeHost" />
+      </span>
+    </NamedLink>
+  );
+
   return (
     <nav className={classes}>
       <NamedLink className={css.logoLink} name="LandingPage">
@@ -156,11 +170,7 @@ const TopbarDesktop = props => {
         />
       </NamedLink>
       {search}
-      <NamedLink className={css.createListingLink} name="NewListingPage">
-        <span className={css.createListing}>
-          <FormattedMessage id="TopbarDesktop.createListing" />
-        </span>
-      </NamedLink>
+      {storageLink}
       {inboxLink}
       {profileMenu}
       {signupLink}
