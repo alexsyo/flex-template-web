@@ -10,6 +10,7 @@ import {
   Page,
   SectionHostHero,
   SectionHostDescription,
+  SectionHostJourneyDescription,
   SectionHostHowItWorks,
   LayoutSingleColumn,
   LayoutWrapperTopbar,
@@ -65,6 +66,11 @@ export const HostLandingPageComponent = props => {
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
                 <SectionHostDescription />
+              </div>
+            </li>
+            <li className={css.section}>
+              <div className={css.sectionContent}>
+                <SectionHostJourneyDescription />
               </div>
             </li>
             <li className={css.section}>

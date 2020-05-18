@@ -174,6 +174,7 @@ export { default as SectionLocations } from './SectionLocations/SectionLocations
 export { default as SectionThumbnailLinks } from './SectionThumbnailLinks/SectionThumbnailLinks';
 export { default as SectionHostHero } from './SectionHostHero/SectionHostHero';
 export { default as SectionHostHowItWorks } from './SectionHostHowItWorks/SectionHostHowItWorks';
+export { default as SectionHostJourneyDescription } from './SectionHostJourneyDescription/SectionHostJourneyDescription';
 export { default as SectionHostDescription } from './SectionHostDescription/SectionHostDescription';
 export { default as SectionHowItWorksHero } from './SectionHowItWorksHero/SectionHowItWorksHero';
 export { default as SectionLandingPageDescription } from './SectionLandingPageDescription/SectionLandingPageDescription';
