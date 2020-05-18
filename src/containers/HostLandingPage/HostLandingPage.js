@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { injectIntl, intlShape } from '../../util/reactIntl';
+import { injectIntl, intlShape, FormattedMessage } from '../../util/reactIntl';
 import { isScrollingDisabled } from '../../ducks/UI.duck';
 import config from '../../config';
 import {
@@ -76,6 +76,20 @@ export const HostLandingPageComponent = props => {
             <li className={css.section}>
               <div className={css.sectionContent}>
                 <SectionHostHowItWorks />
+              </div>
+            </li>
+
+            <li className={css.section}>
+              <div className={css.sectionContent}>
+                <h2 id="contact">
+                  <FormattedMessage id="AboutPage.getInTouchHeader" />
+                </h2>
+                <p>
+                  <FormattedMessage
+                    id="HostLandingPage.askMore"
+                    values={{ email: <a href="mailto:admin@boxitonline.com">admin@boxitonline.com</a>, faqLink: <a href="/faq#question1">FAQ</a> }}
+                  />
+                </p>
               </div>
             </li>
           </ul>
