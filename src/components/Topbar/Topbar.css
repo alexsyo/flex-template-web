@@ -11,6 +11,7 @@
  */
 
   --Topbar_logoHeight: 25px;
+  --Topbar_logoWidth: 25px;
 }
 
 .root {
@@ -45,13 +46,11 @@
 
 .home {
   display: flex;
-  /* padding: calc((var(--topbarHeight) - var(--Topbar_logoHeight)) / 2) 24px; */
+  padding: calc((var(--topbarHeight) - var(--Topbar_logoHeight)) / 2) 24px;
 
 }
 .home img {
-  display: flex;
-  max-height: var(--topbarHeight);
-  padding: calc((var(--topbarHeight) - var(--Topbar_logoHeight)) / 2);
+  width: var(--Topbar_logoWidth);
 }
 
 .logoutButton {
