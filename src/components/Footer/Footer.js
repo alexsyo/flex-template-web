@@ -153,11 +153,11 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Utrecht%2C%20Netherlands&bounds=52.135661%2C5.195132%2C52.026243%2C5.017808',
+                        '?address=London%2C%20Greater%20London%2C%20England%2C%20United%20Kingdom&bounds=51.60163086%2C0.02033278%2C51.40018986%2C-0.23182272',
                     }}
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.searchUtrecht" />
+                    <FormattedMessage id="Footer.searchLondon" />
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
@@ -165,11 +165,11 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Rotterdam%2C%20Netherlands&bounds=51.994305%2C4.601433%2C51.861633%2C4.37917',
+                        '?address=Milan%2C%20Province%20of%20Milan%2C%20Italy&bounds=45.535879%2C9.278131%2C45.386746%2C9.041552',
                     }}
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.searchRotterdam" />
+                    <FormattedMessage id="Footer.searchMilan" />
                   </NamedLink>
                 </li>
               </ul>

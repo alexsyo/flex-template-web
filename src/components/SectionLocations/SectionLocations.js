@@ -8,9 +8,9 @@ import { NamedLink } from '../../components';
 
 import css from './SectionLocations.css';
 
-import utrechtImage from './images/location_utrecht.jpg';
+import londonImage from './images/location_london.jpg';
 import amsterdamImage from './images/location_amsterdam.jpg';
-import rotterdamImage from './images/location_rotterdam.jpg';
+import milanImage from './images/location_milan.jpg';
 
 class LocationImage extends Component {
   render() {
@@ -51,9 +51,9 @@ const SectionLocations = props => {
       </div>
       <div className={css.locations}>
         {locationLink(
-          'Utrecht',
-          utrechtImage,
-          '?address=Utrecht%2C%20Netherlands&bounds=52.135661%2C5.195132%2C52.026243%2C5.017808'
+          'London',
+          londonImage,
+          '?address=address=London%2C%20Greater%20London%2C%20England%2C%20United%20Kingdom&bounds=51.60163086%2C0.02033278%2C51.40018986%2C-0.23182272'
         )}
         {locationLink(
           'Amsterdam',
@@ -61,9 +61,9 @@ const SectionLocations = props => {
           '?address=Amsterdam%2C%20Netherlands&bounds=52.51762811%2C5.12390605%2C52.19380373%2C4.61517488'
         )}
         {locationLink(
-          'Rotterdam',
-          rotterdamImage,
-          '?address=Rotterdam%2C%20Netherlands&bounds=51.994305%2C4.601433%2C51.861633%2C4.37917'
+          'Milan',
+          milanImage,
+          '?address=Milan%2C%20Province%20of%20Milan%2C%20Italy&bounds=45.535879%2C9.278131%2C45.386746%2C9.041552'
         )}
       </div>
     </div>

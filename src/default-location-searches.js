@@ -16,17 +16,17 @@ export default [
     },
   },
   {
-    id: 'default-utrecht',
+    id: 'default-london',
     predictionPlace: {
-      address: 'Utrecht, Netherlands',
-      bounds: new LatLngBounds(new LatLng(52.135661, 5.195132), new LatLng(52.026243, 5.01780)),
+      address: 'London, United Kingdom',
+      bounds: new LatLngBounds(new LatLng(51.60163086, 0.02033278), new LatLng(51.40018986, -0.23182272)),
     },
   },
   {
-    id: 'default-rotterdam',
+    id: 'default-milan',
     predictionPlace: {
-      address: 'Rotterdam, Netherlands',
-      bounds: new LatLngBounds(new LatLng(51.994305, 4.601433), new LatLng(51.861633, 4.37917)),
+      address: 'Milan, Italy',
+      bounds: new LatLngBounds(new LatLng(45.535879, 9.278131), new LatLng(45.386746, 9.041552)),
     },
   },
 ];
