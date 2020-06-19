@@ -273,6 +273,8 @@
 	"FaqPage.answer7": "Als je door de geboekte tijd heen raakt, kun je proberen een paar extra dagen te boeken door een bericht te sturen naar de host. Als dat niet lukt omdat de host het druk heeft, kun je altijd een praatje met hem/ haar maken en vragen of het mogelijk is om je spullen met een of twee dagen vertraging op te halen. Vergeet niet dat, indien niet anders vermeld in de vermelding, je een week de tijd hebt om ze op te halen bij de host, na die tijd kan de host ze als achtergelaten beschouwen en ze overeenkomstig verwijderen. Vriendelijk en op tijd zijn houdt iedereen gelukkig en alles flex.",
 	"FaqPage.question8": "Hoe verdien ik geld?",
 	"FaqPage.answer8": "Om geld te verdienen via Boxitonline moet je een host worden en je ruimte te huur aanbieden met de community. Na het plaatsen van een foto en een beschrijving van je ruimte bent je klaar om direct boekingsaanvragen te accepteren!",
+	"FaqPage.question9": "Is there any risk I don't get paid after the contract ends?",
+  	"FaqPage.answer9": "No, there isn't. The guests provides their card details when booking and they get charged when the booking starts. Their money are kept safe by us in a temporary account and released when the reservation ends.",
 	"FieldBoolean.no": "Nee",
 	"FieldBoolean.yes": "Ja",
 	"FieldDateInput.clearDate": "Datum wissen",

@@ -273,6 +273,8 @@
   "FaqPage.answer7": "If your reserved time is running out you can try to reserve some extra days by sending a message to the host. If that doesn't work out because the host is busy you can always have a chat with him/her and ask if it's possible to retrieve your stuff with one or two days of delay. Remember that if not otherwise specified in the listing, you have one week to retrieve them from the host, after that time the host can consider them abandoned and get rid of them the way he wants. Being kind and on time keeps everyone happy and everything smooth. ;-)",
   "FaqPage.question8": "How do I make money?",
   "FaqPage.answer8": "To earn money through Boxitonline you have to become a host and start sharing your free space with the community. After posting a picture and a description of your space you will be ready to accept booking requests right away!",
+  "FaqPage.question9": "Esiste un rischio o una possibilitá di non essere pagati?",
+  "FaqPage.answer9": "No. Gli ospiti forniscono i dati della loro carta al momento della prenotazione e vengono tariffati all'inizio del periodo di affitto. I soldi vengono tenuti in un conto temporaneo e versati quando la transazione termina.",
   "FieldBoolean.no": "No",
   "FieldBoolean.yes": "Si",
   "FieldDateInput.clearDate": "Cancella Data",
