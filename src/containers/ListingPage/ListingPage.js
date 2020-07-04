@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import config from '../../config';
 import routeConfiguration from '../../routeConfiguration';
+import { findOptionsForSelectFilter } from '../../util/search';
 import { LISTING_STATE_PENDING_APPROVAL, LISTING_STATE_CLOSED, propTypes } from '../../util/types';
 import { types as sdkTypes } from '../../util/sdkLoader';
 import {
@@ -41,7 +42,12 @@ import {
 } from '../../components';
 import { TopbarContainer, NotFoundPage } from '../../containers';
 
-import { sendEnquiry, loadData, setInitialValues } from './ListingPage.duck';
+import {
+  sendEnquiry,
+  loadData,
+  setInitialValues,
+  fetchTransactionLineItems,
+} from './ListingPage.duck';
 import SectionImages from './SectionImages';
 import SectionAvatar from './SectionAvatar';
 import SectionHeading from './SectionHeading';
@@ -188,8 +194,11 @@ export class ListingPageComponent extends Component {
       sendEnquiryError,
       timeSlots,
       fetchTimeSlotsError,
-      categoriesConfig,
-      amenitiesConfig,
+      filterConfig,
+      onFetchTransactionLineItems,
+      lineItems,
+      fetchLineItemsInProgress,
+      fetchLineItemsError,
     } = this.props;
 
     const listingId = new UUID(rawParams.id);
@@ -370,10 +379,12 @@ export class ListingPageComponent extends Component {
       </NamedLink>
     );
 
+    const amenityOptions = findOptionsForSelectFilter('amenities', filterConfig);
+    const categoryOptions = findOptionsForSelectFilter('category', filterConfig);
     const category =
       publicData && publicData.category ? (
         <span>
-          {categoryLabel(categoriesConfig, publicData.category)}
+          {categoryLabel(categoryOptions, publicData.category)}
           <span className={css.separator}>•</span>
         </span>
       ) : null;
@@ -427,7 +438,7 @@ export class ListingPageComponent extends Component {
                     onContactUser={this.onContactUser}
                   />
                   <SectionDescriptionMaybe description={description} />
-                  <SectionFeaturesMaybe options={amenitiesConfig} publicData={publicData} />
+                  <SectionFeaturesMaybe options={amenityOptions} publicData={publicData} />
                   <SectionRulesMaybe publicData={publicData} />
                   <SectionMapMaybe
                     geolocation={geolocation}
@@ -461,6 +472,10 @@ export class ListingPageComponent extends Component {
                   onManageDisableScrolling={onManageDisableScrolling}
                   timeSlots={timeSlots}
                   fetchTimeSlotsError={fetchTimeSlotsError}
+                  onFetchTransactionLineItems={onFetchTransactionLineItems}
+                  lineItems={lineItems}
+                  fetchLineItemsInProgress={fetchLineItemsInProgress}
+                  fetchLineItemsError={fetchLineItemsError}
                 />
               </div>
             </div>
@@ -484,8 +499,9 @@ ListingPageComponent.defaultProps = {
   timeSlots: null,
   fetchTimeSlotsError: null,
   sendEnquiryError: null,
-  categoriesConfig: config.custom.categories,
-  amenitiesConfig: config.custom.amenities,
+  filterConfig: config.custom.filters,
+  lineItems: null,
+  fetchLineItemsError: null,
 };
 
 ListingPageComponent.propTypes = {
@@ -524,9 +540,11 @@ ListingPageComponent.propTypes = {
   sendEnquiryError: propTypes.error,
   onSendEnquiry: func.isRequired,
   onInitializeCardPaymentData: func.isRequired,
-
-  categoriesConfig: array,
-  amenitiesConfig: array,
+  filterConfig: array,
+  onFetchTransactionLineItems: func.isRequired,
+  lineItems: array,
+  fetchLineItemsInProgress: bool.isRequired,
+  fetchLineItemsError: propTypes.error,
 };
 
 const mapStateToProps = state => {
@@ -539,6 +557,9 @@ const mapStateToProps = state => {
     fetchTimeSlotsError,
     sendEnquiryInProgress,
     sendEnquiryError,
+    lineItems,
+    fetchLineItemsInProgress,
+    fetchLineItemsError,
     enquiryModalOpenForListingId,
   } = state.ListingPage;
   const { currentUser } = state.user;
@@ -567,6 +588,9 @@ const mapStateToProps = state => {
     fetchReviewsError,
     timeSlots,
     fetchTimeSlotsError,
+    lineItems,
+    fetchLineItemsInProgress,
+    fetchLineItemsError,
     sendEnquiryInProgress,
     sendEnquiryError,
   };
@@ -576,6 +600,8 @@ const mapDispatchToProps = dispatch => ({
   onManageDisableScrolling: (componentId, disableScrolling) =>
     dispatch(manageDisableScrolling(componentId, disableScrolling)),
   callSetInitialValues: (setInitialValues, values) => dispatch(setInitialValues(values)),
+  onFetchTransactionLineItems: (bookingData, listingId, isOwnListing) =>
+    dispatch(fetchTransactionLineItems(bookingData, listingId, isOwnListing)),
   onSendEnquiry: (listingId, message) => dispatch(sendEnquiry(listingId, message)),
   onInitializeCardPaymentData: () => dispatch(initializeCardPaymentData()),
 });
