@@ -1,6 +1,6 @@
 import * as custom from './marketplace-custom-config.js';
 import defaultLocationSearches from './default-location-searches';
-import { stripePublishableKey, stripeCountryDetails } from './stripe-config';
+import { defaultMCC, stripePublishableKey, stripeCountryDetails } from './stripe-config';
 import { currencyConfiguration } from './currency-config';
 
 const env = process.env.REACT_APP_ENV;
@@ -32,15 +32,18 @@ const sortSearchByDistance = false;
 //
 // In a way, 'processAlias' defines which transaction process (or processes)
 // this particular web application is able to handle.
-// const bookingProcessAlias = 'preauth-nightly-booking/release-1';
-const bookingProcessAlias = 'sca-preauth-nightly-booking/release-1';
+const bookingProcessAlias = 'flex-default-process/release-1';
 
 // The transaction line item code for the main unit type in bookings.
 //
 // Possible values: ['line-item/night', 'line-item/day', 'line-item/units';]
 //
-// Note: translations will use different translation keys for night, day or unit
-// depending on the value chosen.
+// Note 1: This 'bookingUnitType' variable affects only web app.
+//         If you are using privileged transitions (which is used by the default process),
+//         you also need to configure unit type in API server: server/api-util/lineItems.js
+//
+// Note 2: Translations will use different translation keys for night, day or unit
+//         depending on the value chosen.
 const bookingUnitType = 'line-item/night';
 
 // Should the application fetch available time slots (currently defined as
@@ -201,6 +204,7 @@ const config = {
   currencyConfig,
   listingMinimumPriceSubUnits,
   stripe: {
+    defaultMCC: defaultMCC,
     publishableKey: stripePublishableKey,
     supportedCountries: stripeCountryDetails,
   },

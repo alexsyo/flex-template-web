@@ -4,7 +4,7 @@
  * It's also handled separately in handleSubmit function.
  */
 import React, { Component } from 'react';
-import { bool, func, object, string } from 'prop-types';
+import { func, object, string } from 'prop-types';
 import { FormattedMessage, injectIntl, intlShape } from '../../util/reactIntl';
 import { Form as FinalForm } from 'react-final-form';
 import classNames from 'classnames';
@@ -283,8 +283,7 @@ PaymentMethodsForm.defaultProps = {
   className: null,
   rootClassName: null,
   inProgress: false,
-  handleSubmit: null,
-  invalid: false,
+  onSubmit: null,
   addPaymentMethodError: null,
   deletePaymentMethodError: null,
   createStripeCustomerError: null,
@@ -295,8 +294,7 @@ PaymentMethodsForm.defaultProps = {
 PaymentMethodsForm.propTypes = {
   formId: string,
   intl: intlShape.isRequired,
-  invalid: bool,
-  handleSubmit: func,
+  onSubmit: func,
   addPaymentMethodError: object,
   deletePaymentMethodError: object,
   createStripeCustomerError: object,

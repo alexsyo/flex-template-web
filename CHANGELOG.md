@@ -12,11 +12,147 @@ way to update this template, but currently, we follow a pattern:
 
 ---
 
-## Upcoming version 2019-XX-XX
+## Upcoming version 2020-XX-XX
 
+## [v6.1.0] 2020-07-01
+
+- [fix] MainPanel: search filter bug. Address and bounds are handled outside of MainPanel, URL
+  params should be trusted instead of values stored to state.
+  [#1320](https://github.com/sharetribe/ftw-daily/pull/1320)
+- [fix] small typo. [#1319](https://github.com/sharetribe/ftw-daily/pull/1319)
+- [fix] Fix typo (which is copy-pasted in 4 files).
+  [#1318](https://github.com/sharetribe/ftw-daily/pull/1318)
+- [add] Update French translation file (Spanish and German translations have still missing keys).
+  [#1316](https://github.com/sharetribe/ftw-daily/pull/1316)
+- [fix] Sync bookingUnitType variables and update comments. Client app's API (proxy) server needs to
+  know about unit type. [#1317](https://github.com/sharetribe/ftw-daily/pull/1317)
+
+[v6.1.0]: https://github.com/sharetribe/flex-template-web/compare/v6.0.0...v6.1.0
+
+## [v6.0.0] 2020-06-25
+
+- [change] Use privileged transitions for price calculation by default and update the process alias.
+  [#1314](https://github.com/sharetribe/ftw-daily/pull/1314)
+- [add] Add client secret enquiry to 'yarn run config' script
+  [#1313](https://github.com/sharetribe/ftw-daily/pull/1313)
+- [change] Add UI support for flexible pricing and privileged transitions. Note that this requires
+  updating the booking breakdown estimation code that is now done in the backend.
+  [#1310](https://github.com/sharetribe/ftw-daily/pull/1310)
+- [add] Add local API endpoints for flexible pricing and privileged transitions
+  [#1301](https://github.com/sharetribe/ftw-daily/pull/1301)
+- [fix] `yarn run dev-backend` was expecting NODE_ENV.
+  [#1303](https://github.com/sharetribe/ftw-daily/pull/1303)
+
+[v6.0.0]: https://github.com/sharetribe/flex-template-web/compare/v5.0.0...v6.0.0
+
+## [v5.0.0] 2020-06-04
+
+- [change] Streamlining filter setup. Everyone who customizes FTW-templates, needs to update filters
+  and unfortunately the related code has been spread out in multiple UI containers.
+
+  Now, filters are more configurable through marketplace-custom-config.js. You can just add new
+  filter configs to `filters` array in there - and that should be enough for creating new filters
+  for extended data.
+
+  If your are creating a totally new filter component, you can take it into use in a single file:
+  src/containers/SearchPage/FilterComponent.js
+
+  In addition, we have renamed couple of container components:
+
+  - SearchFilters -> SearchFiltersPrimary
+  - SearchFiltersPanel -> SearchFiltersSecondary (SearchFiltersMobile has kept its name.)
+
+  SortBy filter's state is also tracked similarly as filters. From now on, the state is kept in
+  MainPanel and not in those 3 different UI containers.
+
+  [#1296](https://github.com/sharetribe/ftw-daily/pull/1296)
+
+[v5.0.0]: https://github.com/sharetribe/flex-template-web/compare/v4.5.0...v5.0.0
+
+## [v4.5.0] 2020-06-01
+
+- [fix] In some situations, ProfileMenu has began to overflow on TopbarDesktop.
+  [#1290](https://github.com/sharetribe/ftw-daily/pull/1290)
+- [change] Update dependencies (patch updates only)
+  [#1291](https://github.com/sharetribe/ftw-daily/pull/1291)
+- [change] Refactor server API routes into separate files.
+  [#1294](https://github.com/sharetribe/ftw-daily/pull/1294)
+- [change] Start the backend API router in dev mode with a dev server.
+  [#1297](https://github.com/sharetribe/ftw-daily/pull/1297)
+
+[v4.5.0]: https://github.com/sharetribe/flex-template-web/compare/v4.4.3...v4.5.0
+
+## [v4.4.3] 2020-05-13
+
+- [fix] Allow white space on Japanese bank account info. Japan collects bank name and account owner
+  name in addition to routing numbers. [#1287](https://github.com/sharetribe/ftw-daily/pull/1287)
+- [fix] wrongly named default props handleSubmit renamed to onSubmit
+  [#1288](https://github.com/sharetribe/ftw-daily/pull/1288)
+
+[v4.4.3]: https://github.com/sharetribe/flex-template-web/compare/v4.4.2...v4.4.3
+
+## [v4.4.2] 2020-04-09
+
+- [fix] Handle deleted reviews in ActivityFeed
+  [#1283](https://github.com/sharetribe/ftw-daily/pull/1283)
+
+[v4.4.2]: https://github.com/sharetribe/flex-template-web/compare/v4.4.1...v4.4.2
+
+## [v4.4.1] 2020-03-30
+
+- [change] Improve the search page sorting and filters UI for different screen sizes
+  [#1280](https://github.com/sharetribe/ftw-daily/pull/1280)
+
+[v4.4.1]: https://github.com/sharetribe/flex-template-web/compare/v4.4.0...v4.4.1
+
+## [v4.4.0] 2020-03-25
+
+- [add] Search result sorting [#1277](https://github.com/sharetribe/ftw-daily/pull/1277)
+- [change] Move category and amenities search filters from primary filters to secondary filters.
+  [#1275](https://github.com/sharetribe/ftw-daily/pull/1275)
+
+[v4.4.0]: https://github.com/sharetribe/flex-template-web/compare/v4.3.0...v4.4.0
+
+## [v4.3.0] 2020-03-16
+
+- [change] Redirect user back to Stripe during Connect Onboarding Flow when user is returned to
+  failure URL provided that the Account Link generation is successful.
+  [#1269](https://github.com/sharetribe/ftw-daily/pull/1269)
+- [fix] Don't flash listing closed text on mobile view of `BookingPanel` when the listing data is
+  not loaded yet. Instead, check that text is shown only for closed listings.
+  [#1268](https://github.com/sharetribe/ftw-daily/pull/1268)
+- [change] Use some default values to improve Stripe Connect onboarding. When creating a new Stripe
+  the account we will pass the account type, business URL and MCC to Stripe in order to avoid a
+  couple of steps in Connect Onboarding. We will also pass `tos_shown_and_accepted` flag. This PR
+  will bring back the previously used `accountToken` which is now used for passing e.g. the account
+  type to Stripe. [#1267](https://github.com/sharetribe/ftw-daily/pull/1267)
+- [change] Update `Modal` component to have option to use `Portal` with `usePortal` flag. Keep also
+  possibility to use modals without Portal because of `ModalInMobile` component.
+  [#1258](https://github.com/sharetribe/ftw-daily/pull/1258)
+
+  [v4.3.0]: https://github.com/sharetribe/flex-template-web/compare/v4.2.0...v4.3.0
+
+## [v4.2.0] 2020-02-18
+
+- [add] Show a banner when a user is logged in with limited access.
+  [#1259](https://github.com/sharetribe/ftw-daily/pull/1259)
+  [#1261](https://github.com/sharetribe/ftw-daily/pull/1261)
+- [add] Support for logging in as a user from Console.
+  [#1254](https://github.com/sharetribe/ftw-daily/pull/1254)
+- [change] Add `handlebars` 4.5.3 and `serialize-javascript` 2.1.1 to resolutions in `package.json`.
+  [#1251](https://github.com/sharetribe/ftw-daily/pull/1251)
+
+  [v4.2.0]: https://github.com/sharetribe/flex-template-web/compare/v4.1.0...v4.2.0
+
+## [v4.1.0] 2020-02-03
+
+- [fix] Remove unused 'invalid' prop that breaks some versions of Final Form
+  [#1255](https://github.com/sharetribe/ftw-daily/pull/1255)
 - [fix] Fix `console.warn` functions. [#1252](https://github.com/sharetribe/ftw-daily/pull/1252)
-- [fix] Add missing countries (e.g. MX and JP) to `StripeBankAccountTokenInput` validations.
+- [add] Add missing countries (e.g. MX and JP) to `StripeBankAccountTokenInput` validations.
   [#1250](https://github.com/sharetribe/ftw-daily/pull/1250)
+
+  [v4.0.1]: https://github.com/sharetribe/flex-template-web/compare/v4.0.0...v4.1.0
 
 ## [v4.0.0] 2019-12-19
 
